@@ -1,0 +1,110 @@
+{{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' | stylesheet_tag }}
+{{ 'style.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'orangy_header.js' | asset_url }}" defer="defer"></script>
+
+
+<div>
+    <div class="header__information" style="background:{{ section.settings.address_background_color }}">
+        <div class="icon__arrow arrow__left">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="header__phone turn__off" >
+          <a style="color:{{ section.settings.phone_color}};" href="tel:{{ section.settings.phone-number }}">(+84){{ section.settings.phone-number }}</a>
+        </div>
+        <div class="header__address" >
+          <a style="color:{{ section.settings.address_color}};" href=""> {{ section.settings.address }}</a>
+        </div>
+        <div class="icon__arrow arrow__right">
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      <div class="header__logo header__logo--{{section.settings.logo_content_position}} 
+      {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+      style="color:{{ section.settings.font_color}}; background:{{ section.settings.background_color }}"
+    > 
+       {{ section.settings.title-name }}
+      </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Orangy Header",
+        "tag": "section",
+        "class": "orangy-header",
+        "settings": [
+            {
+                "type": "text",
+                "label": "Title number",
+                "id":"phone-number",
+                "default":"12 34 5678",
+                "placeholder": "(+84) 12 34 5678"               
+            },
+            {
+              "type": "color",
+              "id": "phone_color",
+              "label": "Font Color",
+            }, 
+            {
+                "type": "text",
+                "label": "Title Address",
+                "id":"address",
+                "default":"78 Trung Kinh, Yen Hoa, Cau Giay, HaNoi",
+                "placeholder": "78 Trung Kinh, Yen Hoa, Cau Giay, HaNoi"   
+            },
+            {
+              "type": "color",
+              "id": "address_color",
+              "label": "Font Color",
+            }, 
+            {
+              "type": "color",
+              "id": "address_background_color",
+              "label": "Background Color",
+            },
+            {
+                "type": "text",
+                "label": "Title Name",
+                "id":"title-name",
+                "default":"ORANGY",
+                "placeholder": "ORANGY"               
+            },
+            {
+              "type": "select",
+              "id": "logo_content_position",
+              "options": [
+                {
+                  "value": "middle-left",
+                  "label": "middle left"
+                },
+                {
+                  "value": "middle-center",
+                  "label": "middle center"
+                },
+                {
+                  "value": "middle-right",
+                  "label": "middle right"
+                },
+              ],
+              "default": "middle-center",
+              "label": "middle center"
+            },
+            {
+              "type": "color",
+              "id": "font_color",
+              "label": "Font Color",
+            },  
+            {
+              "type": "color",
+              "id": "background_color",
+              "label": "Background Color",
+            },
+        ],
+        "presets":[
+        {
+            "name": "Orangy Header",
+        }
+    ],
+    }
+
+
+{% endschema %}
