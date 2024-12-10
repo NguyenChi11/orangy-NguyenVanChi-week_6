@@ -1,9 +1,6 @@
 {{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' | stylesheet_tag }}
 {{ 'style.css' | asset_url | stylesheet_tag }}
 
-
-
-
 <div class="banner banner--{{section.settings.banner_content_position}}" style="background-image: url({{ section.settings.orangy_banner_image | image_url: width: 3840 }})" >
     <div class="banner__overlay" style="opacity: {{ section.settings.banner_opacity | divided_by: 100.0 }};">
     </div>
