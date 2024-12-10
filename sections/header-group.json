@@ -11,6 +11,20 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "orangy_header_w8hHdM": {
+      "type": "orangy-header",
+      "settings": {
+        "phone-number": "12 34 5678",
+        "phone_color": "",
+        "address": "78 Trung Kinh, Yen Hoa, Cau Giay, HaNoi",
+        "address_color": "",
+        "address_background_color": "",
+        "title-name": "ORANGY",
+        "logo_content_position": "middle-center",
+        "font_color": "",
+        "background_color": ""
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -25,6 +39,7 @@
       "block_order": [
         "announcement-bar-0"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "show_line_separator": true,
@@ -37,6 +52,7 @@
     },
     "header": {
       "type": "header",
+      "disabled": true,
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
@@ -56,6 +72,7 @@
     }
   },
   "order": [
+    "orangy_header_w8hHdM",
     "announcement-bar",
     "header"
   ]
