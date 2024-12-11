@@ -1,0 +1,82 @@
+
+{{ 'style.css' | asset_url | stylesheet_tag }}
+
+
+<div class="wrapper__block" data-aos="fade-up" data-aos-duration="3000">
+    <div class="wrapper__image">
+            <img
+                src="{{ section.settings.orangy_sale_image_1 | image_url: width: 533 }}"
+                loading="lazy"
+                width="{{ product.featured_media.width }}"
+                height="{{ product.featured_media.height }}"
+              >
+    </div>
+    <div class="wrapper__title">
+      <div class="title__header">
+        <p>{{ section.settings.text_1 }}</p>
+      </div>
+      <div class="title__body">
+        <div class="title__body__primary">
+          <h1>{{ section.settings.text_2 }}</h1>
+        </div>
+        <div class="title__body__text">
+          <p>{{ section.settings.text_3 }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper__image">
+        <img
+            src="{{ section.settings.orangy_sale_image_2 | image_url: width: 533 }}"
+            loading="lazy"
+            width="{{ product.featured_media.width }}"
+            height="{{ product.featured_media.height }}"
+          >
+    </div>
+  </div>
+
+
+  {% schema %}
+{
+    "name": "orangy-sale-block",
+    "tag": "section",
+    "class": "orangy-sale-block",
+    "settings": [
+        {
+            "type": "text",
+            "label": "text 1",
+            "id":"text_1",
+            "default":"SEASON SALE COLLECTIONS",
+            "placeholder": "SEASON SALE COLLECTIONS"   
+        },
+        {
+            "type": "text",
+            "label": "text 2",
+            "id":"text_2",
+            "default":"SALE 30% OFF",
+            "placeholder": "SALE 30% OFF"   
+        },
+        {
+            "type": "text",
+            "label": "text 3",
+            "id":"text_3",
+            "default":"Save extra on our sale collection *Runs until 14:00pm PST",
+            "placeholder": "Save extra on our sale collection *Runs until 14:00pm PST"   
+        },
+        {
+            "type": "image_picker",
+            "id": "orangy_sale_image_1",
+            "label": "orangy-sale-image_1"
+        },
+        {
+            "type": "image_picker",
+            "id": "orangy_sale_image_2",
+            "label": "orangy-sale-image_2"
+        },
+    ],
+    "presets": [
+        {
+          "name": "Orangy Sale Block",
+        }       
+      ]
+}
+{% endschema %}
