@@ -1,0 +1,56 @@
+{{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' | stylesheet_tag }}
+{{ 'style.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'orangy_header.js' | asset_url }}" defer="defer"></script>
+
+<div class="marquee-container" style="background:{{section.settings.background_text_color  }};">
+    <span class="marquee-text" style="color:{{ section.settings.text_color}}; "
+      >{{ section.settings.text_1 }} <span>*</span> {{ section.settings.text_2 }} <span>*</span> {{ section.settings.text_3 }} </span
+    >
+</div>
+{% schema %}
+{
+    "name": "orangy-text-carousel",
+    "tag": "section",
+    "class": "orangy-text-carousel",
+    "settings": [
+        {
+            "type": "text",
+            "label": "text 1",
+            "id":"text_1",
+            "default":"FIND INSPRATION",
+            "placeholder": "FIND INSPRATION"   
+        },
+        {
+            "type": "text",
+            "label": "text 2",
+            "id":"text_2",
+            "default":"DESIGN FOR LIVING",
+            "placeholder": "DESIGN FOR LIVING"   
+        },
+        {
+            "type": "text",
+            "label": "text 3",
+            "id":"text_3",
+            "default":"UNIQUE FURNITURE",
+            "placeholder": "UNIQUE FURNITURE"   
+        },
+        {
+            "type": "color",
+            "id": "text_color",
+            "label": "Font Color",
+        }, 
+        {
+            "type": "color",
+            "id": "background_text_color",
+            "label": "Background Color",
+        }, 
+     
+        
+    ],
+    "presets": [
+        {
+          "name": "Orangy Text Carousel",
+        }       
+      ]
+}
+{% endschema %}
