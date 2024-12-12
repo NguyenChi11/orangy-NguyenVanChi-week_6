@@ -1,0 +1,83 @@
+{{ 'style.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'orangy-faq.js' | asset_url }}" defer="defer"></script>
+{{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' | stylesheet_tag }}
+
+<div
+    class="faq"
+    data-aos="fade-left"
+    data-aos-anchor="#example-anchor"
+    data-aos-offset="500"
+    data-aos-duration="500"
+  >
+    <div class="faq__title">
+      <h1>{{ section.settings.title }}</h1>
+    </div>
+    <div class="faq__menu">
+      {% for block in section.blocks %}
+        {% if block.type=="text_faq" %}
+          <div class="faq__items">
+            <div class="faq__questions">
+              <h2>{{ block.settings.orangy_faq_question }}</h2>
+              <div class="icon">
+                <div class="icon-act icon-plus">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="icon-act icon-mins hide">
+                  <i class="fa-solid fa-minus"></i>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="faq__answer">
+              <p>
+                {{ block.settings.orangy_faq_answer }}
+              </p>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+
+  {% schema %}
+{
+    "name": "orangy_inspiration",
+    "tag": "section",
+    "class": "orangy_inspiration",
+    "settings": [
+      {
+        "type": "text",
+        "label": "title",
+        "id":"title",
+        "default":"Discover more in our FAQs",
+        "placeholder": "Discover more in our FAQs"   
+      },      
+    ],
+    "blocks": [
+      {
+        "type": "text_faq",
+        "name": "Text faq",
+        "settings": [
+          {
+            "type": "text",
+            "id": "orangy_faq_question",
+            "label": "Text Question",
+            "default": "Default text"
+          },
+          {
+            "type": "richtext",
+            "id": "orangy_faq_answer",
+            "label": "Text Answer",
+          },
+        ]
+      },
+    ],
+
+    "presets": [
+      {
+        "name": "Orangy FAQ",
+      }       
+  ]    
+}
+{% endschema %}
