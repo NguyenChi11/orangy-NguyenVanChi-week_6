@@ -1,0 +1,101 @@
+{{ 'style.css' | asset_url | stylesheet_tag }}
+{{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' | stylesheet_tag }}
+
+
+    <!-- single banner -->
+<div class="single__banner" style=" background-image: url({{ section.settings.image_single_banner| image_url: width: 3840  }})";>
+    <div class="single__banner__overlay" style="opacity: {{ section.settings.single_banner_opacity | divided_by: 100.0 }};">
+    </div>
+    <div class="single__text">
+        <h2>{{ section.settings.title_single_banner }}</h2>
+        <p>{{ section.settings.text_single_banner }}</p>
+    </div>
+</div>
+  
+      <!-- over service -->
+ <div class="icon__list">
+        {% for block in section.blocks %}
+          {% if block.type == "text_over_service" %}            
+              <div class="icon__item">
+                  {{ block.settings.image_over_service |image_url: width: 73 |image_tag:image_icon }}
+                <div class="icon__title">
+                  <h4>{{ block.settings.title_over_service }}</h4>
+                  <p>
+                   {{ block.settings.text_over_service }}
+                  </p>
+                </div>
+              </div>
+          {% endif %}
+        {% endfor %}
+</div> 
+
+      {% schema %}
+      {
+          "name": "orangy_single_banner",
+          "tag": "section",
+          "class": "orangy_single_banner",
+          "settings": [
+            {
+                "type": "image_picker",
+                "id": "image_single_banner",
+                "label": "Image single banner",
+            },
+            {
+                "type": "range",
+                "id": "single_banner_opacity",
+                "min": 0,
+                "max": 100,
+                "step": 10,
+                "unit": "%",
+                "label": "opacity label",
+                "default": 50
+              },
+            {
+              "type": "text",
+              "label": "Title Single Banner",
+              "id":"title_single_banner",
+              "default":"Elevate Your Home",
+              "placeholder": "Elevate Your Home"   
+            },
+            {
+                "type": "text",
+                "label": "Text Single Banner",
+                "id":"text_single_banner",
+                "default":"Clever products for every corner",
+                "placeholder": "Clever products for every corner"   
+            }, 
+                   
+          ],
+          "blocks": [
+            {
+              "type": "text_over_service",
+              "name": "Text over service",
+              "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image_over_service",
+                    "label": "Image over service",
+                },
+                {
+                  "type": "text",
+                  "id": "title_over_service",
+                  "label": "Title over service",
+                  "default": "Free & fast delivery"
+                },
+                {
+                    "type": "text",
+                    "id": "text_over_service",
+                    "label": "Text over service",
+                    "default": "Free & fast delivery"
+                },
+              ]
+            },
+          ],
+      
+          "presets": [
+            {
+              "name": "Orangy Single Banner",
+            }       
+        ]    
+      }
+      {% endschema %}      
