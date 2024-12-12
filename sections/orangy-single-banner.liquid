@@ -17,7 +17,7 @@
         {% for block in section.blocks %}
           {% if block.type == "text_over_service" %}            
               <div class="icon__item">
-                  {{ block.settings.image_over_service |image_url: width: 73 |image_tag:image_icon }}
+                  {{ block.settings.image_over_service |image_url: width: 73 |image_tag:'image_icon' }}
                 <div class="icon__title">
                   <h4>{{ block.settings.title_over_service }}</h4>
                   <p>

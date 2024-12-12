@@ -66,6 +66,7 @@
       &__primary {
         @include center-flex;
         h1 {
+          color: $color-white;
           margin-top: 115px;
           width: 240px;
           font-family: Lora;
