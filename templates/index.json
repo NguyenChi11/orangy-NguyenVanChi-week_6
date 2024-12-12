@@ -20,8 +20,8 @@
         "heading_font_title": "helvetica_n4",
         "banner_title_color": "#ffffff",
         "banner_title_size": "medium",
-        "orangy_banner_description": "<p>Zang My Love !!!!</p>",
-        "orangy_banner_confirm": "<p>Home</p>"
+        "orangy_banner_description": "<p>Clever products for every corner</p>",
+        "orangy_banner_confirm": "<p>EXPLORE NOW</p>"
       }
     },
     "orangy_product_tjjFGB": {
@@ -90,71 +90,50 @@
         "orangy_sale_image_2": "shopify://shop_images/slide_2.png"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
-    "image_banner": {
-      "type": "image-banner",
+    "orangy_inspiration_3PUB3U": {
+      "type": "orangy-inspiration",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "text_inspiration_xYeezK": {
+          "type": "text_inspiration",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "orangy_inspiration_image": "shopify://shop_images/slide_4.png",
+            "orangy_inspiration_title": "Default text",
+            "orangy_inspiration_content": "Default text"
           }
         },
-        "button": {
-          "type": "buttons",
+        "text_inspiration_X7CFHY": {
+          "type": "text_inspiration",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "orangy_inspiration_image": "shopify://shop_images/items_2.png",
+            "orangy_inspiration_title": "Default text",
+            "orangy_inspiration_content": "Default text"
+          }
+        },
+        "text_inspiration_wz9kby": {
+          "type": "text_inspiration",
+          "settings": {
+            "orangy_inspiration_image": "shopify://shop_images/slide_3.png",
+            "orangy_inspiration_title": "Default text",
+            "orangy_inspiration_content": "Default text"
+          }
+        },
+        "text_inspiration_gLwMnm": {
+          "type": "text_inspiration",
+          "settings": {
+            "orangy_inspiration_image": "shopify://shop_images/items_2.png",
+            "orangy_inspiration_title": "Default text",
+            "orangy_inspiration_content": "Default text"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "text_inspiration_xYeezK",
+        "text_inspiration_X7CFHY",
+        "text_inspiration_wz9kby",
+        "text_inspiration_gLwMnm"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "title": "Change the look of your house, change the perspective of others"
       }
     }
   },
@@ -164,7 +143,6 @@
     "orangy_slider_fDyUVT",
     "orangy_text_carousel_GYUtYX",
     "orangy_sale_block_E47gYT",
-    "featured_collection",
-    "image_banner"
+    "orangy_inspiration_3PUB3U"
   ]
 }
