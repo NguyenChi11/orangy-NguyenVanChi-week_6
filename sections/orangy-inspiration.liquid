@@ -1,0 +1,78 @@
+{{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' | stylesheet_tag }}
+{{ 'style.css' | asset_url | stylesheet_tag }}
+
+
+<div class="inspiration" data-aos="zoom-in-right">
+  <div class="inspiration__title">
+    <h2>{{ section.settings.title }}</h2>
+  </div>
+  <div class="inspiration__full">
+    <div id="scrollContainer" class="inspiration__body">
+    {% for block in section.blocks %}
+      {% if block.type=="text_inspiration" %}        
+          <div class="inspiration__item">
+            <img
+              src="{{ block.settings.orangy_inspiration_image | image_url: width: 291 }}"
+              loading="lazy"
+              width="{{ product.featured_media.width }}"
+              height="{{ product.featured_media.height }}"
+            >
+            <h3>{{ block.settings.orangy_inspiration_title }}</h3>
+            <p>
+              {{ block.settings.orangy_inspiration_content }}
+            </p>
+          </div>
+        {% endif %}  
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+    "name": "orangy_inspiration",
+    "tag": "section",
+    "class": "orangy_inspiration",
+    "settings": [
+      {
+        "type": "text",
+        "label": "title",
+        "id":"title",
+        "default":"Change the look of your house, change the perspective of others",
+        "placeholder": "Change the look of your house, change the perspective of others"   
+      },      
+    ],
+    "blocks": [
+      {
+        "type": "text_inspiration",
+        "name": "Text Inspiration",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "orangy_inspiration_image",
+            "label": "orangy inspiration image"
+          },
+          {
+            "type": "text",
+            "id": "orangy_inspiration_title",
+            "label": "Text Content",
+            "default": "Default text"
+          },
+          {
+            "type": "text",
+            "id": "orangy_inspiration_content",
+            "label": "Text Content",
+            "default": "Default text"
+          },
+        ]
+      },
+    ],
+
+    "presets": [
+      {
+        "name": "Orangy Inspiration",
+      }       
+  ]    
+}
+{% endschema %}
