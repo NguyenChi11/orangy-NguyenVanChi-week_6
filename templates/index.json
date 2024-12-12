@@ -89,6 +89,52 @@
         "orangy_sale_image_1": "shopify://shop_images/slide_1.png",
         "orangy_sale_image_2": "shopify://shop_images/slide_2.png"
       }
+    },
+    "orangy_inspiration_3PUB3U": {
+      "type": "orangy-inspiration",
+      "blocks": {
+        "text_inspiration_xYeezK": {
+          "type": "text_inspiration",
+          "settings": {
+            "orangy_inspiration_image": "shopify://shop_images/slide_4.png",
+            "orangy_inspiration_title": "Default text",
+            "orangy_inspiration_content": "Default text"
+          }
+        },
+        "text_inspiration_X7CFHY": {
+          "type": "text_inspiration",
+          "settings": {
+            "orangy_inspiration_image": "shopify://shop_images/items_2.png",
+            "orangy_inspiration_title": "Default text",
+            "orangy_inspiration_content": "Default text"
+          }
+        },
+        "text_inspiration_wz9kby": {
+          "type": "text_inspiration",
+          "settings": {
+            "orangy_inspiration_image": "shopify://shop_images/slide_3.png",
+            "orangy_inspiration_title": "Default text",
+            "orangy_inspiration_content": "Default text"
+          }
+        },
+        "text_inspiration_gLwMnm": {
+          "type": "text_inspiration",
+          "settings": {
+            "orangy_inspiration_image": "shopify://shop_images/items_2.png",
+            "orangy_inspiration_title": "Default text",
+            "orangy_inspiration_content": "Default text"
+          }
+        }
+      },
+      "block_order": [
+        "text_inspiration_xYeezK",
+        "text_inspiration_X7CFHY",
+        "text_inspiration_wz9kby",
+        "text_inspiration_gLwMnm"
+      ],
+      "settings": {
+        "title": "Change the look of your house, change the perspective of others"
+      }
     }
   },
   "order": [
@@ -96,6 +142,7 @@
     "orangy_product_tjjFGB",
     "orangy_slider_fDyUVT",
     "orangy_text_carousel_GYUtYX",
-    "orangy_sale_block_E47gYT"
+    "orangy_sale_block_E47gYT",
+    "orangy_inspiration_3PUB3U"
   ]
 }
