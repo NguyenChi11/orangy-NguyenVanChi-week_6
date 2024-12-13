@@ -1,0 +1,149 @@
+{{ 'style.css' | asset_url | stylesheet_tag }}
+{{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' | stylesheet_tag }}
+<script src="{{ 'orangy-cookies.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'orangy-newsletter.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'orangy-submitForm.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'orangy-validator.js' | asset_url }}" defer="defer"></script>
+
+
+<!-- popup -->
+<div class="popup-overlay" id="popup">
+    <div class="popup-wrapper" >
+      <div class="popup-image">
+        {{ section.settings.image-popup | image_url: width : 450 |image_tag }}
+      </div>
+      <div class="popup-content">
+        <h3>{{ section.settings.popup-content-h3 }}</h3>
+        <h2>{{ section.settings.popup-content-h2 }}</h2>
+        <p class="popup-title">
+          {{ section.settings.popup-content-title }}
+        </p>
+        <div class="icon-popup">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <!-- popup success -->
+  <div class="popup-success" id="popup">
+    <div class="popup-wrapper">
+      <div class="popup-content">
+        <h1>{{ section.settings.popup-success-title }}</h1>
+        <p>{{ section.settings.popup-success-text }}</p>
+        <div class="icon-popup-fetch">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- popup error -->
+  <div class="popup-error" id="popup">
+    <div class="popup-wrapper">
+      <div class="popup-content">
+        <h1>{{ section.settings.popup-error-title }}</h1>
+        <p>{{ section.settings.popup-error-text }}</p>
+        <div class="icon-popup-error icon-popup-fetch">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- popup cookie-bar-->
+  <div class="popup-cookie-bar">
+    <div class="cookie-bar-wrapper">
+      <div class="cookie-left">
+        <p>
+        {{ section.settings.popup-cookie-bar-text }}
+        </p>
+      </div>
+      <div class="cookie-right">
+        <button class="btn-accept">{{ section.settings.popup-btn-accept }}</button>
+        <button class="btn-ignore">{{ section.settings.popup-btn-ignore }}</button>
+      </div>
+    </div>
+  </div>
+
+  {% schema %}
+    {
+        "name": "Popup Group",
+        "tag": "section",
+        "class": "orangy-popup",
+        "settings": [
+            {
+                "type":"image_picker",
+                "id": "image-popup",
+                "label": "Popup overlay",
+            },
+            {
+                "type":"text",
+                "id": "popup-content-h3",
+                "label": "Popup title H3",
+                "default":"Big Sale"
+            },
+            {
+                "type":"text",
+                "id": "popup-content-h2",
+                "label": "Popup title H2",
+                "default":"Up to 50% Off Black Friday"
+            },
+            {
+                "type":"text",
+                "id": "popup-content-title",
+                "label": "Popup title title",
+                "default":"Applicable to all products from Nov 25 to Nov 29"
+            },
+            {
+                "type":"text",
+                "id": "popup-success-title",
+                "label": "success title",
+                "default":"Thank you!"
+            },
+            {
+                "type":"text",
+                "id": "popup-success-text",
+                "label": "success text",
+                "default":"Data has been sent successfully."
+            },
+            {
+                "type":"text",
+                "id": "popup-error-title",
+                "label": "error title",
+                "default":"Oops! An error occurred.."
+            },
+            {
+                "type":"text",
+                "id": "popup-error-text",
+                "label": "error text",
+                "default":"Please check your information and try again"
+            },
+            {
+                "type":"text",
+                "id": "popup-cookie-bar-text",
+                "label": "orangy cookie bar",
+                "default":"This website uses cookies to ensure you get the best experience on our website."
+            },
+            {
+                "type":"text",
+                "id": "popup-btn-accept",
+                "label": "button accept",
+                "default":"ACCEPT"
+            },
+            {
+                "type":"text",
+                "id": "popup-btn-ignore",
+                "label": "button ignore",
+                "default":"IGNORE"
+            },
+        ],
+        "presets": [
+            {
+                "name": "Popup Group",
+                "settings": {}
+            }
+        ]
+    }
+
+  {% endschema %}

@@ -1,0 +1,92 @@
+{{ 'style.css' | asset_url | stylesheet_tag }}
+{{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' | stylesheet_tag }}
+
+<div
+    class="contact"
+    data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000"
+  >
+    <div class="contact__left">
+        {{ section.settings.image_contact_1 |image_url: width: 310 |image_tag: class: 'image__contact_1'  }}
+        {{ section.settings.image_contact_2 |image_url: width: 180 |image_tag: class: 'image__contact_2'  }}
+       {{ section.settings.image_contact_3 |image_url: width: 220 |image_tag: class: 'image__contact_3' }}
+    </div>
+    <div class="contact__between">
+      <div class="contact__body">
+        <div class="contact__tile">
+          <span>{{ section.settings.contact_span }}</span>
+          <h3>{{ section.settings.contact_address }}</h3>
+        </div>
+        <div class="contact__btn">
+          <a href="#">
+            <button>{{ section.settings.contact_button }}</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="contact__right">
+        {{ section.settings.image_contact_4 |image_url: width: 330 |image_tag: class: 'image__contact_4' }}
+        {{ section.settings.image_contact_5 |image_url: width: 250 |image_tag: class: 'image__contact_5' }}
+    </div>
+  </div>
+
+{% schema %}
+  {
+    "name": "orangy_contact_shop",
+    "tag": "section",
+    "class": "orangy_contact_shop",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image_contact_1",
+            "label": "Image contact 1",
+        },
+        {
+            "type": "image_picker",
+            "id": "image_contact_2",
+            "label": "Image contact 2",
+        },
+        {
+            "type": "image_picker",
+            "id": "image_contact_3",
+            "label": "Image contact 3",
+        },
+        {
+            "type": "text",
+            "id": "contact_span",
+            "label": "text span",
+            "default":"RENOVATE YOUR HOME AT"
+        },
+        {
+            "type": "text",
+            "id": "contact_address",
+            "label": "contact address",
+            "default":"8 Trung Kinh, Yen Hoa, Cau Giay, Hanoi"
+        },
+        {
+            "type": "text",
+            "id": "contact_button",
+            "label": "contact button",
+            "default":"@ORANGY"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_contact_4",
+            "label": "Image contact 4",
+        },
+        {
+            "type": "image_picker",
+            "id": "image_contact_5",
+            "label": "Image contact 5",
+        },
+    ],
+    "presets": [
+        {
+            "name": "Orangy Contact Shop",
+            "settings": {}
+        }      
+    ]    
+}
+
+{% endschema %}
