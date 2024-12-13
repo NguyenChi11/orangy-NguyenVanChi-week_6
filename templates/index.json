@@ -96,33 +96,33 @@
         "text_inspiration_xYeezK": {
           "type": "text_inspiration",
           "settings": {
-            "orangy_inspiration_image": "shopify://shop_images/slide_4.png",
-            "orangy_inspiration_title": "Default text",
-            "orangy_inspiration_content": "Default text"
+            "orangy_inspiration_image": "shopify://shop_images/items_1.png",
+            "orangy_inspiration_title": "Showroom",
+            "orangy_inspiration_content": "Experience design for living at ourflagship showroom located in Boston’s South End."
           }
         },
         "text_inspiration_X7CFHY": {
           "type": "text_inspiration",
           "settings": {
             "orangy_inspiration_image": "shopify://shop_images/items_2.png",
-            "orangy_inspiration_title": "Default text",
-            "orangy_inspiration_content": "Default text"
+            "orangy_inspiration_title": "Interior work",
+            "orangy_inspiration_content": "Crafting spaces through meticulousplanning, material selection, and creative execution, enhancing aesthetics and functionality."
           }
         },
         "text_inspiration_wz9kby": {
           "type": "text_inspiration",
           "settings": {
-            "orangy_inspiration_image": "shopify://shop_images/slide_3.png",
-            "orangy_inspiration_title": "Default text",
-            "orangy_inspiration_content": "Default text"
+            "orangy_inspiration_image": "shopify://shop_images/items_3.jpg",
+            "orangy_inspiration_title": "Authentic design",
+            "orangy_inspiration_content": "We only carry designs we believe inethically and aesthetically – original, authentic pieces that are made to last."
           }
         },
         "text_inspiration_gLwMnm": {
           "type": "text_inspiration",
           "settings": {
-            "orangy_inspiration_image": "shopify://shop_images/items_2.png",
-            "orangy_inspiration_title": "Default text",
-            "orangy_inspiration_content": "Default text"
+            "orangy_inspiration_image": "shopify://shop_images/items_4.png",
+            "orangy_inspiration_title": "Custom additions",
+            "orangy_inspiration_content": "Tailoring unique elements to spaces, elevating interiors with personalized craftsmanship and design solutions."
           }
         }
       },
@@ -135,6 +135,146 @@
       "settings": {
         "title": "Change the look of your house, change the perspective of others"
       }
+    },
+    "orangy_single_banner_F7L9XU": {
+      "type": "orangy-single-banner",
+      "blocks": {
+        "text_over_service_pPMxV3": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_1.png",
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        },
+        "text_over_service_HJmTFU": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_2.png",
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        },
+        "text_over_service_xDbXEe": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_3.png",
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        },
+        "text_over_service_byA9Ta": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_4.png",
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        }
+      },
+      "block_order": [
+        "text_over_service_pPMxV3",
+        "text_over_service_HJmTFU",
+        "text_over_service_xDbXEe",
+        "text_over_service_byA9Ta"
+      ],
+      "settings": {
+        "image_single_banner": "shopify://shop_images/image_2_1.png",
+        "single_banner_opacity": 50,
+        "title_single_banner": "Elevate Your Home",
+        "text_single_banner": "Clever products for every corner"
+      }
+    },
+    "orangy_faq_Gm738t": {
+      "type": "orangy-faq",
+      "blocks": {
+        "text_faq_yGNCqE": {
+          "type": "text_faq",
+          "settings": {
+            "orangy_faq_question": "How long does shipping take?",
+            "orangy_faq_answer": "<p>Your sales managers will go into the field feeling energized, excited, and inspired.  We are a full service business development group – we build strategies and systems.</p>"
+          }
+        },
+        "text_faq_ggjLdK": {
+          "type": "text_faq",
+          "settings": {
+            "orangy_faq_question": "Does my piece come in any packaging?",
+            "orangy_faq_answer": "<p>Your sales managers will go into the field feeling energized, excited, and inspired.  We are a full service business development group – we build strategies and systems.</p>"
+          }
+        },
+        "text_faq_n7JE3a": {
+          "type": "text_faq",
+          "settings": {
+            "orangy_faq_question": "Do you ship internationally?",
+            "orangy_faq_answer": "<p>Your sales managers will go into the field feeling energized, excited, and inspired.  We are a full service business development group – we build strategies and systems.</p>"
+          }
+        },
+        "text_faq_aBA9gA": {
+          "type": "text_faq",
+          "settings": {
+            "orangy_faq_question": "What payment methods do you accept?",
+            "orangy_faq_answer": "<p>Your sales managers will go into the field feeling energized, excited, and inspired.  We are a full service business development group – we build strategies and systems.</p>"
+          }
+        },
+        "text_faq_Y8Rc3R": {
+          "type": "text_faq",
+          "settings": {
+            "orangy_faq_question": "What should I do if my order is not placed?",
+            "orangy_faq_answer": "<p>Your sales managers will go into the field feeling energized, excited, and inspired.  We are a full service business development group – we build strategies and systems.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_faq_yGNCqE",
+        "text_faq_ggjLdK",
+        "text_faq_n7JE3a",
+        "text_faq_aBA9gA",
+        "text_faq_Y8Rc3R"
+      ],
+      "settings": {
+        "title": "Discover more in our FAQs"
+      }
+    },
+    "orangy_contact_shop_kiDtJd": {
+      "type": "orangy-contact-shop",
+      "settings": {
+        "image_contact_1": "shopify://shop_images/contact_1.png",
+        "image_contact_2": "shopify://shop_images/contact_2.png",
+        "image_contact_3": "shopify://shop_images/contact_3.png",
+        "contact_span": "RENOVATE YOUR HOME AT",
+        "contact_address": "8 Trung Kinh, Yen Hoa, Cau Giay, Hanoi",
+        "contact_button": "@ORANGY",
+        "image_contact_4": "shopify://shop_images/contact_4.png",
+        "image_contact_5": "shopify://shop_images/contact_5.png"
+      }
+    },
+    "featured_collection_8JFjG4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -143,6 +283,10 @@
     "orangy_slider_fDyUVT",
     "orangy_text_carousel_GYUtYX",
     "orangy_sale_block_E47gYT",
-    "orangy_inspiration_3PUB3U"
+    "orangy_inspiration_3PUB3U",
+    "orangy_single_banner_F7L9XU",
+    "orangy_faq_Gm738t",
+    "orangy_contact_shop_kiDtJd",
+    "featured_collection_8JFjG4"
   ]
 }
