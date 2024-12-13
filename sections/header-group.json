@@ -69,9 +69,26 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "orangy_popup_zTbTjL": {
+      "type": "orangy-popup",
+      "settings": {
+        "image-popup": "shopify://shop_images/467554930_18087951010515474_4727179450106075648_n_1.jpg",
+        "popup-content-h3": "Big Sale",
+        "popup-content-h2": "Up to 50% Off Black Friday",
+        "popup-content-title": "Applicable to all products from Nov 25 to Nov 29",
+        "popup-success-title": "Thank you!",
+        "popup-success-text": "Data has been sent successfully.",
+        "popup-error-title": "Oops! An error occurred..",
+        "popup-error-text": "Please check your information and try again",
+        "popup-cookie-bar-text": "This website uses cookies to ensure you get the best experience on our website.",
+        "popup-btn-accept": "ACCEPT",
+        "popup-btn-ignore": "IGNORE"
+      }
     }
   },
   "order": [
+    "orangy_popup_zTbTjL",
     "orangy_header_w8hHdM",
     "announcement-bar",
     "header"
