@@ -13,6 +13,65 @@
 .contact .field {
   margin-bottom: 1.5rem;
 }
+.contact__button {
+  display: flex;
+  margin-top: 4rem;
+  justify-content: center;
+  font-family: Lora;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.contact__fields .field input {
+  width: 100%;
+}
+
+.contact__fields {
+  justify-content: center;
+}
+
+.title-orangy {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+
+.title-orangy h2 {
+  font-family: Lora;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 500px;
+}
+
+.field__input__contact {
+  padding: 1rem;
+}
+.text-end {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.text-end p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
 
 @media screen and (min-width: 750px) {
   .contact .field {
