@@ -37,9 +37,10 @@
   }
 
   .footer__content-top {
-    padding-bottom: 3rem;
-    padding-left: calc(4rem / var(--font-body-scale));
-    padding-right: calc(4rem / var(--font-body-scale));
+    /* padding-bottom: 3rem; */
+    /* padding-left: calc(4rem / var(--font-body-scale));
+    padding-right: calc(4rem / var(--font-body-scale)); */
+    width: 100%;
   }
 }
 
@@ -170,7 +171,7 @@
   font-size: 32px;
   font-weight: 400;
   line-height: 42px;
-  text-align: center;
+  text-align: start;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
@@ -179,13 +180,12 @@
   /* margin-bottom: 2rem; */
   font-family: Poppins;
   margin: 10px 0;
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-text-align: center;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: start;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 @media screen and (min-width: 990px) {
@@ -204,13 +204,12 @@ text-decoration-skip-ink: none;
   .footer-block__heading__text {
     /* margin-bottom: 2rem; */
     font-family: Poppins;
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-text-align: center;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
   }
 }
 
@@ -235,7 +234,7 @@ text-decoration-skip-ink: none;
 }
 
 .newsletter-form__field-wrapper {
-  max-width: 36rem;
+  /* max-width: 36rem; */
 }
 
 @media screen and (min-width: 750px) {
@@ -248,37 +247,35 @@ text-decoration-skip-ink: none;
     flex-direction: column;
     /* align-items: center; */
     text-align: center;
+  }
 }
-  }
 
-  .footer-block__newsletter:not(:only-child) .footer__newsletter {
-    justify-content: flex-start;
-    margin: 0;
-  }
+.footer-block__newsletter:not(:only-child) .footer__newsletter {
+  justify-content: flex-start;
+  margin: 0;
+}
 
-  .footer-block__newsletter:not(:only-child)
-    .newsletter-form__message--success {
-    left: auto;
-  }
+.footer-block__newsletter:not(:only-child) .newsletter-form__message--success {
+  left: auto;
+}
 
-  .footer__follow-on-shop {
-    margin-bottom: 0.4rem;
-  }
-  /* Follow on shop is the first button but it has siblings*/
-  .footer__follow-on-shop:first-child:not(:last-child) {
-    justify-content: flex-start;
-    margin-right: auto;
-    text-align: left;
-  }
+.footer__follow-on-shop {
+  margin-bottom: 0.4rem;
+}
+/* Follow on shop is the first button but it has siblings*/
+.footer__follow-on-shop:first-child:not(:last-child) {
+  justify-content: flex-start;
+  margin-right: auto;
+  text-align: left;
+}
 
-  /*
+/*
     All three components are present, email, Follow on Shop, and social icons.
     Moves the FoS button next to the social icons so they appear grouped together
   */
-  .footer__follow-on-shop:not(:first-child):not(:last-child) {
-    justify-content: flex-end;
-    text-align: right;
-  }
+.footer__follow-on-shop:not(:first-child):not(:last-child) {
+  justify-content: flex-end;
+  text-align: right;
 }
 
 @media screen and (max-width: 749px) {
@@ -291,7 +288,26 @@ text-decoration-skip-ink: none;
     flex-direction: column;
     flex: 1 1 100%;
     align-items: center;
-    gap: 3rem;
+    /* gap: 3rem; */
+  }
+  .footer-block__heading {
+    font-family: Lora;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .footer-block__heading__text {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
   }
 
   .footer__list-social.list-social,
@@ -535,6 +551,15 @@ text-decoration-skip-ink: none;
 .policies li a {
   padding: 0.6rem 0;
   display: block;
+}
+
+.wrapper__icon-footer {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: start;
+  justify-content: start;
+  justify-items: start;
 }
 
 @media screen and (min-width: 750px) {
