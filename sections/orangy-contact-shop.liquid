@@ -2,17 +2,17 @@
 {{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' | stylesheet_tag }}
 
 <div
-    class="contact"
+    class="contact__shop"
     data-aos="flip-left"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="2000"
   >
-    <div class="contact__left">
+    <div class="contact__shop__left">
         {{ section.settings.image_contact_1 |image_url: width: 310 |image_tag: class: 'image__contact_1'  }}
         {{ section.settings.image_contact_2 |image_url: width: 180 |image_tag: class: 'image__contact_2'  }}
        {{ section.settings.image_contact_3 |image_url: width: 220 |image_tag: class: 'image__contact_3' }}
     </div>
-    <div class="contact__between">
+    <div class="contact__shop__between">
       <div class="contact__body">
         <div class="contact__tile">
           <span>{{ section.settings.contact_span }}</span>
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <div class="contact__right">
+    <div class="contact__shop__right">
         {{ section.settings.image_contact_4 |image_url: width: 330 |image_tag: class: 'image__contact_4' }}
         {{ section.settings.image_contact_5 |image_url: width: 250 |image_tag: class: 'image__contact_5' }}
     </div>

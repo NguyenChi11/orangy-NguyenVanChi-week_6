@@ -1,7 +1,7 @@
 @import "../base/mixins";
 @import "../base/variables";
 
-.contact {
+.contact__shop {
   background: $color-contact;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -96,7 +96,7 @@
 }
 
 @media (max-width: 1600px) {
-  .contact {
+  .contact__shop {
     height: 752px;
     margin-top: 60px;
     &__left {
@@ -161,7 +161,7 @@
 }
 
 @media (max-width: 1400px) {
-  .contact {
+  .contact__shop {
     height: 600px;
     margin-top: 60px;
     &__left {
@@ -226,7 +226,7 @@
 }
 
 @media (max-width: 1200px) {
-  .contact {
+  .contact__shop {
     height: 500px;
     margin-top: 60px;
     &__left {
@@ -292,7 +292,7 @@
 }
 
 @media (max-width: 900px) {
-  .contact {
+  .contact__shop {
     height: 400px;
     margin-top: 60px;
     &__left {
@@ -358,7 +358,7 @@
 }
 
 @media (max-width: 768px) {
-  .contact {
+  .contact__shop {
     display: grid;
     grid-template-columns: 1fr;
     height: 800px;
@@ -422,7 +422,7 @@
 }
 
 @media (max-width: 500px) {
-  .contact {
+  .contact__shop {
     display: grid;
     grid-template-columns: 1fr;
     height: 800px;
@@ -486,7 +486,7 @@
 }
 
 @media (max-width: 391px) {
-  .contact {
+  .contact__shop {
     margin-top: 40px;
     height: 700px;
     &__left {

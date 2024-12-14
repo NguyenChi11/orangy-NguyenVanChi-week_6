@@ -11,7 +11,7 @@
   .newsletter-form {
     align-items: flex-start;
     margin: 0 auto;
-    max-width: 36rem;
+    /* max-width: 36rem; */
   }
 }
 
@@ -73,4 +73,27 @@
 
 .newsletter-form__button .icon {
   width: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper-footer {
+    width: 320px;
+  }
+  .footer__content-top {
+    padding: 0px;
+  }
+  .footer-block--newsletter {
+    width: 320px;
+  }
+  .footer-block__newsletter {
+    width: 320px;
+  }
+  .newsletter-form__field-wrapper {
+    width: 320px;
+  }
+  .newsletter-form__field-wrapper .field {
+    width: 100%;
+    z-index: 0;
+    margin: 20px 0px;
+  }
 }

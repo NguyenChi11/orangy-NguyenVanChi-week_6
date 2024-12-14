@@ -40,6 +40,7 @@
           font-weight: 400;
           line-height: 24px;
           text-align: left;
+          width: 291px;
         }
       }
     }
@@ -56,6 +57,8 @@
       }
     }
     &__full {
+      width: 100%;
+      overflow: scroll;
       .inspiration__body {
         gap: 40px;
         .inspiration__item {
@@ -74,6 +77,8 @@
 @media (max-width: 1200px) {
   .inspiration {
     &__full {
+      width: 100%;
+      overflow: scroll;
       .inspiration__body {
         gap: 10px;
         .inspiration__item {
