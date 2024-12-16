@@ -1,0 +1,65 @@
+
+{{ 'style.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'orangy-faq.js' | asset_url }}" defer="defer"></script>
+{{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' | stylesheet_tag }}
+
+
+<div class="product__title__all">
+  <div class="product__menu" data-aos="fade-up-right">
+    <div class="product__menu__left">
+      <h1>Our picks for you</h1>
+    </div>
+    {% comment %} in ra tab menu  {% endcomment %}
+    <div class="product__menu__right"> 
+      {% assign categories = "seating,table,storage,lighting,decor" | split: "," %}
+      {% for category in categories %}
+        <span class="product__menu__title" data-category="{{ category }}">{{ category | upcase }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="product__gird__list">
+  <ul  class="product__gird"data-aos="flip-left">
+    {% for product in collections[section.settings.collection].products limit: section.settings.products_to_show %}
+    <li class="production-item  ">
+      {% render 'orangy-card-product',
+        card_product: product,
+      %}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+
+{% schema %}
+{
+  "name": "OrangyFeatured Collection",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select Collection"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "default": 4,
+      "label": "Number of Products to Show"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": "Show 'View All' Button",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Orangy Featured Collection"
+    }
+  ]
+}
+{% endschema %}
