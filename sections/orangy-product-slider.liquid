@@ -1,0 +1,53 @@
+{{ 'cdn-Splide.css' | asset_url | stylesheet_tag }}
+<script  src="{{ 'orangy-produc-slider.js' | asset_url }}" defer="defer"></script>
+{{ 'style.css' | asset_url | stylesheet_tag }}
+<script  src="{{ 'orangy-slider.js' | asset_url }}" defer="defer"></script>
+
+
+<div class="slider__title">
+    <h1>Discover unique items</h1>
+  </div>
+  <div class="slider">
+    <div class="slider__list">
+      <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul
+            id="splide__list"
+            class="splide__list"
+          >
+            {% for product in section.settings.products  %}
+                <li class="splide__slide  ">
+                  {% render 'orangy-slider',
+                    card_product: product,
+                  %}
+                </li>
+            {% endfor %}
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% schema %}
+{
+  "name": "Orangy Slider Product",
+  "settings": [
+    {
+      "type": "product_list",
+      "id": "products",
+      "label": "Select Collection"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": "Show 'View All' Button",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Orangy Slider Product",
+    }
+  ]
+}
+{% endschema %}

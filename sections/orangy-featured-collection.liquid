@@ -11,9 +11,10 @@
     </div>
     {% comment %} in ra tab menu  {% endcomment %}
     <div class="product__menu__right"> 
-      {% assign categories = "seating,table,storage,lighting,decor" | split: "," %}
-      {% for category in categories %}
-        <span class="product__menu__title" data-category="{{ category }}">{{ category | upcase }}</span>
+      {% assign menu_items = "seating,table,storage,lighting,decor" | split: "," %}
+      {% for item in menu_items %}
+        <span class="product__menu__title" data-category="{{ item }}"> </span>
+        <a href="?category={{ item | downcase }}">{{ item | upcase }}</a>
       {% endfor %}
     </div>
   </div>
@@ -35,6 +36,12 @@
 {
   "name": "OrangyFeatured Collection",
   "settings": [
+    {
+      "type": "collection_list",
+      "id": "collections_menu",
+      "label": "select Collections",
+      "limit": 10
+    },
     {
       "type": "collection",
       "id": "collection",
