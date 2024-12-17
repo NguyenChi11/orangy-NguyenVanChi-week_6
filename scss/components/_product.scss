@@ -84,6 +84,11 @@
   //   }
   // }
 }
+.product__menu__title.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+}
 
 .productions {
   width: 100%;

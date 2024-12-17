@@ -400,6 +400,12 @@
   grid-column-end: 5;
 }
 
+.product__menu__title.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+}
+
 .productions {
   width: 100%;
   position: relative;
@@ -671,6 +677,10 @@
   font-weight: 400;
   line-height: 40px;
   text-align: center;
+}
+
+.splide__list {
+  visibility: visible;
 }
 
 .slider {

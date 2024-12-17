@@ -45,8 +45,8 @@
           {% endfor %}
         </ul>
 
-        {% if product.product__selling %}
-          <p class="voucher__sell">{{ product.product__selling }}</p>
+        {% comment %} {% if product.product__selling %}
+          <p class="voucher__sell">{{ product.product__selling }}</p>-
         {% endif %}
       
         {% if product.product__voucher %}
@@ -55,6 +55,6 @@
       
         {% if product.product__new %}
           <p class="voucher__new">{{ product.product__new }}</p>
-        {% endif %}
+        {% endif %} {% endcomment %}
       </div>
-</div>
+</div>-
