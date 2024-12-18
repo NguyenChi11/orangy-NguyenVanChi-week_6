@@ -73,6 +73,18 @@
         "orangy_sale_image_2": "shopify://shop_images/slide_2.png"
       }
     },
+    "orangy_contact_ieW8th": {
+      "type": "orangy-contact",
+      "settings": {
+        "heading": "Contact us to order and receive purchase advice",
+        "background_color": "#F6F3EE",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "text-end": "* Required"
+      }
+    },
     "orangy_inspiration_3PUB3U": {
       "type": "orangy-inspiration",
       "blocks": {
@@ -117,55 +129,6 @@
       ],
       "settings": {
         "title": "Change the look of your house, change the perspective of others"
-      }
-    },
-    "orangy_single_banner_F7L9XU": {
-      "type": "orangy-single-banner",
-      "blocks": {
-        "text_over_service_pPMxV3": {
-          "type": "text_over_service",
-          "settings": {
-            "image_over_service": "shopify://shop_images/icon_1.png",
-            "title_over_service": "Free & fast delivery",
-            "text_over_service": "Free & fast delivery"
-          }
-        },
-        "text_over_service_HJmTFU": {
-          "type": "text_over_service",
-          "settings": {
-            "image_over_service": "shopify://shop_images/icon_2.png",
-            "title_over_service": "Free & fast delivery",
-            "text_over_service": "Free & fast delivery"
-          }
-        },
-        "text_over_service_xDbXEe": {
-          "type": "text_over_service",
-          "settings": {
-            "image_over_service": "shopify://shop_images/icon_3.png",
-            "title_over_service": "Free & fast delivery",
-            "text_over_service": "Free & fast delivery"
-          }
-        },
-        "text_over_service_byA9Ta": {
-          "type": "text_over_service",
-          "settings": {
-            "image_over_service": "shopify://shop_images/icon_4.png",
-            "title_over_service": "Free & fast delivery",
-            "text_over_service": "Free & fast delivery"
-          }
-        }
-      },
-      "block_order": [
-        "text_over_service_pPMxV3",
-        "text_over_service_HJmTFU",
-        "text_over_service_xDbXEe",
-        "text_over_service_byA9Ta"
-      ],
-      "settings": {
-        "image_single_banner": "shopify://shop_images/image_2_1.png",
-        "single_banner_opacity": 50,
-        "title_single_banner": "Elevate Your Home",
-        "text_single_banner": "Clever products for every corner"
       }
     },
     "orangy_faq_Gm738t": {
@@ -218,6 +181,55 @@
         "title": "Discover more in our FAQs"
       }
     },
+    "orangy_single_banner_F7L9XU": {
+      "type": "orangy-single-banner",
+      "blocks": {
+        "text_over_service_pPMxV3": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_1.png",
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        },
+        "text_over_service_HJmTFU": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_2.png",
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        },
+        "text_over_service_xDbXEe": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_3.png",
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        },
+        "text_over_service_byA9Ta": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_4.png",
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        }
+      },
+      "block_order": [
+        "text_over_service_pPMxV3",
+        "text_over_service_HJmTFU",
+        "text_over_service_xDbXEe",
+        "text_over_service_byA9Ta"
+      ],
+      "settings": {
+        "image_single_banner": "shopify://shop_images/image_2_1.png",
+        "single_banner_opacity": 50,
+        "title_single_banner": "Elevate Your Home",
+        "text_single_banner": "Clever products for every corner"
+      }
+    },
     "orangy_contact_shop_kiDtJd": {
       "type": "orangy-contact-shop",
       "settings": {
@@ -230,18 +242,6 @@
         "image_contact_4": "shopify://shop_images/contact_4.png",
         "image_contact_5": "shopify://shop_images/contact_5.png"
       }
-    },
-    "orangy_contact_ieW8th": {
-      "type": "orangy-contact",
-      "settings": {
-        "heading": "Contact us to order and receive purchase advice",
-        "background_color": "#F6F3EE",
-        "heading_size": "h1",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "text-end": "* Required"
-      }
     }
   },
   "order": [
@@ -252,8 +252,8 @@
     "orangy_sale_block_E47gYT",
     "orangy_contact_ieW8th",
     "orangy_inspiration_3PUB3U",
-    "orangy_single_banner_F7L9XU",
     "orangy_faq_Gm738t",
+    "orangy_single_banner_F7L9XU",
     "orangy_contact_shop_kiDtJd"
   ]
 }
