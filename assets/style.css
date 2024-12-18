@@ -368,6 +368,22 @@
   display: none;
 }
 
+/* Khi người dùng click vào liên kết, thêm hiệu ứng gạch chân */
+.category-link.active {
+  border-bottom: 1px solid #000000;
+}
+
+.category-link {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.category-link:hover {
+  color: #090909;
+}
+
 .product__gird__list {
   display: flex;
   justify-content: center;
@@ -386,10 +402,6 @@
 .product__gird .production-item:first-child {
   grid-column-start: 1;
   grid-column-end: 3;
-}
-.product__gird .production-item:last-child {
-  grid-column-start: 3;
-  grid-column-end: 5;
 }
 .product__gird .production-item__gird__first {
   grid-column-start: 1;
@@ -574,21 +586,21 @@
     gap: 10px;
     margin: 1%;
   }
+  .product__gird__list .product__gird .production-item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .product__gird__list .product__gird .production-item__gird__first {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .product__gird__list .product__gird .production-item__gird__last {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
   .product__gird__list .product__gird .productions .product__image {
     width: 100%;
     height: 80%;
-  }
-  .product__gird__list .product__gird .productions:first-child {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  .product__gird__list .product__gird .productions__gird__first {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  .product__gird__list .product__gird .productions__gird__last {
-    grid-column-start: 1;
-    grid-column-end: 3;
   }
   .product__gird__list .product__gird .productions .voucher__sell, .product__gird__list .product__gird .productions .voucher__new,
   .product__gird__list .product__gird .productions .voucher .product__voucher {
@@ -602,13 +614,23 @@
   .product__title__all {
     margin-top: 28px;
   }
+  .product__menu {
+    margin: 0 2%;
+  }
   .product__menu__left h1 {
     letter-spacing: -1px;
   }
   .product__menu__right {
-    gap: 32px;
+    width: 100%;
+    overflow-x: auto;
+    gap: 16px;
     margin-top: 22px;
     margin-bottom: 22px;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
   }
   .product__menu__right span {
     font-size: 16px;

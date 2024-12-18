@@ -1,6 +1,7 @@
 
 {{ 'style.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'orangy-faq.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'orangy-collection-product.js' | asset_url }}" defer="defer"></script>
 {{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' | stylesheet_tag }}
 
 
@@ -11,19 +12,20 @@
     </div>
     {% comment %} in ra tab menu  {% endcomment %}
     <div class="product__menu__right"> 
-      {% assign menu_items = "seating,table,storage,lighting,decor" | split: "," %}
-      {% for item in menu_items %}
-        <span class="product__menu__title" data-category="{{ item }}"> </span>
-        <a href="?category={{ item | downcase }}">{{ item | upcase }}</a>
+      {% for collection in section.settings.collections_menu %}
+        <a href="?category={{ collection.handle }} " class="category-link" data-category="{{ collection.handle}}">
+          {{ collection.title | upcase }}
+        </a>
       {% endfor %}
     </div>
   </div>
 </div>
 
-<div class="product__gird__list">
+{% for collection in section.settings.collections_menu %}
+<div class="product__gird__list collection-container" data-category="{{ collection.handle }}" style="display: none;">
   <ul  class="product__gird"data-aos="flip-left">
-    {% for product in collections[section.settings.collection].products limit: section.settings.products_to_show %}
-    <li class="production-item  ">
+    {% for product in collections[collection.handle].products limit: section.settings.products_to_show %}
+    <li class=" production-item product-wrapper  "  data-index="{{ forloop.index0 }}">
       {% render 'orangy-card-product',
         card_product: product,
       %}
@@ -31,6 +33,7 @@
   {% endfor %}
   </ul>
 </div>
+{% endfor %}
 
 {% schema %}
 {
@@ -42,11 +45,13 @@
       "label": "select Collections",
       "limit": 10
     },
-    {
+        {
       "type": "collection",
       "id": "collection",
       "label": "Select Collection"
     },
+    
+
     {
       "type": "range",
       "id": "products_to_show",

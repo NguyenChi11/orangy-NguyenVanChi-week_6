@@ -1,3 +1,5 @@
+<script src="{{ 'orangy-collection-product.js' | asset_url }}" defer="defer"></script>
+
 <div class="productions">
       <img class="product__image"
         src="{{ card_product.featured_media|image_url: height:460  }}"
@@ -44,17 +46,16 @@
             {% endif %}
           {% endfor %}
         </ul>
-
-        {% comment %} {% if product.product__selling %}
-          <p class="voucher__sell">{{ product.product__selling }}</p>-
-        {% endif %}
-      
-        {% if product.product__voucher %}
-          <p class="product__voucher">{{ product.product__voucher }}</p>
-        {% endif %}
-      
-        {% if product.product__new %}
-          <p class="voucher__new">{{ product.product__new }}</p>
-        {% endif %} {% endcomment %}
       </div>
-</div>-
+    </div>
+    {% comment %} {% if product.product__selling %}
+      <p class="voucher__sell">{{ product.product__selling }}</p>-
+    {% endif %}
+  
+    {% if product.product__voucher %}
+      <p class="product__voucher">{{ product.product__voucher }}</p>
+    {% endif %}
+  
+    {% if product.product__new %}
+      <p class="voucher__new">{{ product.product__new }}</p>
+    {% endif %} {% endcomment %}
