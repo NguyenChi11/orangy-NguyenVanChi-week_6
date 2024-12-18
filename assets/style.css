@@ -368,6 +368,22 @@
   display: none;
 }
 
+/* Khi người dùng click vào liên kết, thêm hiệu ứng gạch chân */
+.category-link.active {
+  border-bottom: 1px solid #000000;
+}
+
+.category-link {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.category-link:hover {
+  color: #090909;
+}
+
 .product__gird__list {
   display: flex;
   justify-content: center;
@@ -386,10 +402,6 @@
 .product__gird .production-item:first-child {
   grid-column-start: 1;
   grid-column-end: 3;
-}
-.product__gird .production-item:last-child {
-  grid-column-start: 3;
-  grid-column-end: 5;
 }
 .product__gird .production-item__gird__first {
   grid-column-start: 1;
@@ -564,6 +576,16 @@
   .product__menu__right {
     gap: 20px;
     margin: 20px;
+    width: 100%;
+    overflow-x: auto;
+    gap: 16px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
   }
   .product__menu__title {
     font-size: 14px;
@@ -574,21 +596,21 @@
     gap: 10px;
     margin: 1%;
   }
+  .product__gird__list .product__gird .production-item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .product__gird__list .product__gird .production-item__gird__first {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .product__gird__list .product__gird .production-item__gird__last {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
   .product__gird__list .product__gird .productions .product__image {
     width: 100%;
     height: 80%;
-  }
-  .product__gird__list .product__gird .productions:first-child {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  .product__gird__list .product__gird .productions__gird__first {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  .product__gird__list .product__gird .productions__gird__last {
-    grid-column-start: 1;
-    grid-column-end: 3;
   }
   .product__gird__list .product__gird .productions .voucher__sell, .product__gird__list .product__gird .productions .voucher__new,
   .product__gird__list .product__gird .productions .voucher .product__voucher {
@@ -602,13 +624,23 @@
   .product__title__all {
     margin-top: 28px;
   }
+  .product__menu {
+    margin: 0 2%;
+  }
   .product__menu__left h1 {
     letter-spacing: -1px;
   }
   .product__menu__right {
-    gap: 32px;
+    width: 100%;
+    overflow-x: auto;
+    gap: 16px;
     margin-top: 22px;
     margin-bottom: 22px;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
   }
   .product__menu__right span {
     font-size: 16px;
@@ -1423,29 +1455,44 @@
   .faq {
     margin-top: 68px;
   }
+  .faq .faq__title {
+    font-family: Lora;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38.4px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 260px;
+  }
   .faq__menu {
-    width: 360px;
+    width: auto;
   }
   .faq__menu .faq__items {
     margin-bottom: 31px;
   }
   .faq__menu .faq__items .faq__questions h2 {
-    font-size: 18px;
-    line-height: 30px;
-    margin: 18px 0;
-    margin-top: 10px;
+    font-family: Lora;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
     width: 300px;
   }
-  .faq__menu .faq__items .faq__answer p {
-    font-size: 16px;
-    line-height: 23px;
-    margin-top: 20px;
-    width: 361px;
+  .faq__menu .faq__items hr {
+    margin: 10px 0px;
   }
-  .faq__title h1 {
-    font-size: 30px;
-    line-height: 42px;
-    width: 204px;
+  .faq__menu .faq__items .faq__answer p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 300px;
   }
 }
 .single__banner {
@@ -1621,7 +1668,11 @@
 }
 @media (max-width: 391px) {
   .single__banner {
+    height: 600px;
     margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .single__banner .single__text {
     display: flex;
@@ -1631,10 +1682,14 @@
     flex-direction: column;
   }
   .single__banner .single__text h2 {
-    font-size: 45px;
-    font-weight: 300;
+    font-family: Lora;
+    font-size: 48px;
+    font-weight: 400;
     line-height: 64px;
-    margin: 150px 118px 10px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 240px;
   }
   .single__banner .single__text p {
     font-size: 16px;

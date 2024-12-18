@@ -193,7 +193,11 @@
 
 @media (max-width: 391px) {
   .single__banner {
+    height: 600px;
     margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     .single__text {
       display: flex;
       justify-content: center;
@@ -201,10 +205,14 @@
       align-items: center;
       flex-direction: column;
       h2 {
-        font-size: 45px;
-        font-weight: 300;
+        font-family: Lora;
+        font-size: 48px;
+        font-weight: 400;
         line-height: 64px;
-        margin: 150px 118px 10px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        width: 240px;
       }
       p {
         font-size: 16px;

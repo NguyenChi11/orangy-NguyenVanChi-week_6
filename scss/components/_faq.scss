@@ -252,34 +252,47 @@
 @media (max-width: 391px) {
   .faq {
     margin-top: 68px;
+    .faq__title {
+      font-family: Lora;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 38.4px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      width: 260px;
+    }
     &__menu {
-      width: 360px;
+      width: auto;
       .faq__items {
         margin-bottom: 31px;
         .faq__questions {
           h2 {
-            font-size: 18px;
-            line-height: 30px;
-            margin: 18px 0;
-            margin-top: 10px;
+            font-family: Lora;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30.4px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
             width: 300px;
           }
         }
+        hr {
+          margin: 10px 0px;
+        }
         .faq__answer {
           p {
+            font-family: Poppins;
             font-size: 16px;
-            line-height: 23px;
-            margin-top: 20px;
-            width: 361px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            width: 300px;
           }
         }
-      }
-    }
-    &__title {
-      h1 {
-        font-size: 30px;
-        line-height: 42px;
-        width: 204px;
       }
     }
   }
