@@ -127,8 +127,12 @@
     display: block;
   }
   .header__information {
-    a {
-      font-size: 14px;
+    .header__address,
+    .header__phone {
+      padding: 0px;
+      a {
+        font-size: 14px;
+      }
     }
   }
 }

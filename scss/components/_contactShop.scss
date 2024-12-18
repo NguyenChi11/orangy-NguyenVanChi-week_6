@@ -17,6 +17,11 @@
       top: 7%;
       left: 44%;
     }
+    .image__contact_1:hover {
+      cursor: pointer;
+      transform: scale(0.95);
+      animation: fadeIn 0.5s ease;
+    }
     .image__contact_2 {
       width: 180px;
       height: 180px;
@@ -24,12 +29,22 @@
       top: 39%;
       left: 34%;
     }
+    .image__contact_2:hover {
+      cursor: pointer;
+      transform: scale(0.95);
+      animation: fadeIn 0.5s ease;
+    }
     .image__contact_3 {
       width: 220px;
       height: 220px;
       position: absolute;
       top: 60%;
       left: 67%;
+    }
+    .image__contact_3:hover {
+      cursor: pointer;
+      transform: scale(0.95);
+      animation: fadeIn 0.5s ease;
     }
   }
   &__between {
@@ -84,6 +99,11 @@
       left: 14%;
       position: absolute;
     }
+    .image__contact_4:hover {
+      cursor: pointer;
+      transform: scale(0.95);
+      animation: fadeIn 0.5s ease;
+    }
 
     .image__contact_5 {
       width: 250px;
@@ -91,6 +111,11 @@
       position: absolute;
       top: 54%;
       left: -2%;
+    }
+    .image__contact_5:hover {
+      cursor: pointer;
+      transform: scale(0.95);
+      animation: fadeIn 0.5s ease;
     }
   }
 }

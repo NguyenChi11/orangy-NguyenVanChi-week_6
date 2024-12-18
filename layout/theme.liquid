@@ -297,7 +297,12 @@
       }
     </script>
     <script src="{{ 'aos.js' | asset_url }}" defer="defer"></script>
-    {% comment %} {{ 'aos.css' |asset_url|stylesheet_tag}} {% endcomment %}
+    {{ 'aos.css' |asset_url|stylesheet_tag}}
+     <script> document.addEventListener("DOMContentLoaded", function () {
+       AOS.init();
+    }
+  )
+    </script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
@@ -374,8 +379,6 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    <script>
-      AOS.init();
-    </script>
+  
   </body>
 </html>

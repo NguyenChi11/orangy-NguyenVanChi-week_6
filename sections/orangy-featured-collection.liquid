@@ -4,7 +4,11 @@
 <script src="{{ 'orangy-collection-product.js' | asset_url }}" defer="defer"></script>
 {{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' | stylesheet_tag }}
 
-
+    {% comment %} <script src="{{ 'aos.js' | asset_url }}" defer="defer"></script>
+    {{ 'aos.css' |asset_url|stylesheet_tag}}
+    <script>
+      AOS.init();
+    </script> {% endcomment %}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -20,9 +24,9 @@
   }
 {%- endstyle -%}
 
-<div class="section-{{ section.id }}-padding">
-<div class="product__title__all">
-  <div class="product__menu" data-aos="fade-up-right">
+<div class="section-{{ section.id }}-padding" data-aos="fade-up-right">
+<div class="product__title__all"  >
+  <div class="product__menu">
     <div class="product__menu__left">
       <h1>Our picks for you</h1>
     </div>

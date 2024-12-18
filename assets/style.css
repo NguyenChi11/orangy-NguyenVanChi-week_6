@@ -170,7 +170,12 @@
   .turn__on {
     display: block;
   }
-  .header__information a {
+  .header__information .header__address,
+  .header__information .header__phone {
+    padding: 0px;
+  }
+  .header__information .header__address a,
+  .header__information .header__phone a {
     font-size: 14px;
   }
 }
@@ -349,7 +354,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 42px;
+  gap: 40px;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
@@ -505,6 +510,33 @@
   text-align: left;
 }
 
+.productions:hover {
+  transform: scale(0.95);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.8;
+    transform: translateY(20px);
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(40px);
+    transform: scale(0.95);
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
 @media (max-width: 1440px) {
   .product__menu__left h1 {
     font-size: 30px;
@@ -725,6 +757,10 @@
 .splide__slide .product__slider .product__image {
   width: 100%;
 }
+.splide__slide .product__slider:hover {
+  transform: scale(0.95);
+  animation: fadeIn 0.5s ease;
+}
 .splide__slide .category {
   font-family: Poppins;
   font-size: 14px;
@@ -830,7 +866,7 @@
 .marquee-container .marquee-text {
   display: inline-block;
   padding-left: 100%;
-  animation: marquee 20s linear infinite;
+  animation: marquee 10s linear infinite;
   color: #cccccc;
   font-family: Lora;
   font-size: 74px;
@@ -913,6 +949,18 @@
   text-align: center;
   margin-top: 12px;
   width: 240px;
+}
+
+.wrapper__image:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  animation: fadeIn 0.5s ease;
+}
+
+.wrapper__title:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  animation: fadeIn 0.5s ease;
 }
 
 @media (max-width: 1600px) {
@@ -1154,6 +1202,11 @@
   text-align: left;
   width: 291px;
 }
+.inspiration__full .inspiration__body .inspiration__item:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  animation: fadeIn 0.5s ease;
+}
 
 @media (max-width: 1600px) {
   .inspiration__title {
@@ -1166,6 +1219,8 @@
   .inspiration__full {
     width: 100%;
     overflow: scroll;
+    scrollbar-width: none;
+    overflow-y: hidden;
   }
   .inspiration__full .inspiration__body {
     gap: 40px;
@@ -1181,6 +1236,8 @@
   .inspiration__full {
     width: 100%;
     overflow: scroll;
+    scrollbar-width: none;
+    overflow-y: hidden;
   }
   .inspiration__full .inspiration__body {
     gap: 10px;
@@ -1209,6 +1266,8 @@
   .inspiration__full {
     width: 100%;
     overflow: scroll;
+    scrollbar-width: none;
+    overflow-y: hidden;
   }
   .inspiration__full .inspiration__body {
     gap: 20px;
@@ -1285,6 +1344,9 @@
 }
 .faq__menu .faq__items hr {
   margin: 20px 0;
+}
+.faq__menu .faq__items hr.action {
+  color: black;
 }
 .faq__menu .faq__items .faq__answer p {
   font-family: Poppins;
@@ -1739,6 +1801,11 @@
   top: 7%;
   left: 44%;
 }
+.contact__shop__left .image__contact_1:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  animation: fadeIn 0.5s ease;
+}
 .contact__shop__left .image__contact_2 {
   width: 180px;
   height: 180px;
@@ -1746,12 +1813,22 @@
   top: 39%;
   left: 34%;
 }
+.contact__shop__left .image__contact_2:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  animation: fadeIn 0.5s ease;
+}
 .contact__shop__left .image__contact_3 {
   width: 220px;
   height: 220px;
   position: absolute;
   top: 60%;
   left: 67%;
+}
+.contact__shop__left .image__contact_3:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  animation: fadeIn 0.5s ease;
 }
 .contact__shop__between {
   display: flex;
@@ -1805,12 +1882,22 @@
   left: 14%;
   position: absolute;
 }
+.contact__shop__right .image__contact_4:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  animation: fadeIn 0.5s ease;
+}
 .contact__shop__right .image__contact_5 {
   width: 250px;
   height: 250px;
   position: absolute;
   top: 54%;
   left: -2%;
+}
+.contact__shop__right .image__contact_5:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  animation: fadeIn 0.5s ease;
 }
 
 @media (max-width: 1600px) {

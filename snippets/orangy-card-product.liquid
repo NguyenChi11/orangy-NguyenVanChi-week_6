@@ -1,11 +1,11 @@
 <script src="{{ 'orangy-collection-product.js' | asset_url }}" defer="defer"></script>
 <div class="productions">
-      <img class="product__image"
-        src="{{ card_product.featured_media|image_url: height:460  }}"
-        loading="lazy"
-        width="{{ product.featured_media.width }}"
-        height="{{ product.featured_media.height }}"
-      >
+    <img class="product__image"
+      src="{{ card_product.featured_media|image_url: height:460  }}"
+      loading="lazy"
+      width="{{ product.featured_media.width }}"
+      height="{{ product.featured_media.height }}"
+    >
     <div class="category">{{ card_product.type }}</div>
     <div class="product__name">{{ card_product.title | escape }}</div>
     <div class="product__price__all"> 
