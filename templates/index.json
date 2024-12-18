@@ -24,29 +24,6 @@
         "orangy_banner_confirm": "<p>EXPLORE NOW</p>"
       }
     },
-    "orangy_product_tjjFGB": {
-      "type": "orangy-product",
-      "settings": {
-        "title": "Featured collection",
-        "collection": "home",
-        "description": "",
-        "show_description": false,
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "products_to_show": 8,
-        "columns_desktop": 3,
-        "full_width": false,
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "orangy_text_carousel_GYUtYX": {
       "type": "orangy-text-carousel",
       "settings": {
@@ -252,17 +229,32 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "orangy_featured_collection_3CftRj": {
+      "type": "orangy-featured-collection",
+      "settings": {
+        "collections_menu": [
+          "seating",
+          "table",
+          "storage",
+          "lighting",
+          "decor"
+        ],
+        "collection": "home",
+        "products_to_show": 6,
+        "show_view_all": true
+      }
     }
   },
   "order": [
     "orangy_banner_ppAfNw",
-    "orangy_product_tjjFGB",
     "orangy_text_carousel_GYUtYX",
     "orangy_sale_block_E47gYT",
     "orangy_inspiration_3PUB3U",
     "orangy_single_banner_F7L9XU",
     "orangy_faq_Gm738t",
     "orangy_contact_shop_kiDtJd",
-    "featured_collection_8JFjG4"
+    "featured_collection_8JFjG4",
+    "orangy_featured_collection_3CftRj"
   ]
 }
