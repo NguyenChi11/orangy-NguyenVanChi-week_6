@@ -39,6 +39,20 @@
         "show_view_all": true
       }
     },
+    "orangy_product_slider_wJ3ErL": {
+      "type": "orangy-product-slider",
+      "settings": {
+        "products": [
+          "aria-aurelian",
+          "co-dining-chair",
+          "dain-norseman",
+          "ezra-andalusian",
+          "harbour-side-dining-chair",
+          "hashira-pendant-lamp-cluster"
+        ],
+        "show_view_all": true
+      }
+    },
     "orangy_text_carousel_GYUtYX": {
       "type": "orangy-text-carousel",
       "settings": {
@@ -217,44 +231,29 @@
         "image_contact_5": "shopify://shop_images/contact_5.png"
       }
     },
-    "featured_collection_8JFjG4": {
-      "type": "featured-collection",
+    "orangy_contact_ieW8th": {
+      "type": "orangy-contact",
       "settings": {
-        "title": "Featured collection",
+        "heading": "Contact us to order and receive purchase advice",
+        "background_color": "#F6F3EE",
         "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
         "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "text-end": "* Required"
       }
     }
   },
   "order": [
     "orangy_banner_ppAfNw",
     "orangy_featured_collection_3CftRj",
+    "orangy_product_slider_wJ3ErL",
     "orangy_text_carousel_GYUtYX",
     "orangy_sale_block_E47gYT",
+    "orangy_contact_ieW8th",
     "orangy_inspiration_3PUB3U",
     "orangy_single_banner_F7L9XU",
     "orangy_faq_Gm738t",
-    "orangy_contact_shop_kiDtJd",
-    "featured_collection_8JFjG4"
+    "orangy_contact_shop_kiDtJd"
   ]
 }
