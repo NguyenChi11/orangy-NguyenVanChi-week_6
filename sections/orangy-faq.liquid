@@ -1,7 +1,22 @@
 {{ 'style.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'orangy-faq.js' | asset_url }}" defer="defer"></script>
 {{ 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' | stylesheet_tag }}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
 
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="section-{{ section.id }}-padding">
 <div
     class="faq"
     data-aos="fade-left"
@@ -38,7 +53,7 @@
       {% endfor %}
     </div>
   </div>
-
+</div>
 
   {% schema %}
 {
@@ -52,7 +67,27 @@
         "id":"title",
         "default":"Discover more in our FAQs",
         "placeholder": "Discover more in our FAQs"   
-      },      
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }          
     ],
     "blocks": [
       {
