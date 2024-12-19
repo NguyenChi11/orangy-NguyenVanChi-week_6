@@ -2925,6 +2925,10 @@
   margin-bottom: 54px;
 }
 
+.orangy_form_button {
+  margin: 20px;
+}
+
 .invalid {
   color: #a42003;
 }
@@ -2937,7 +2941,6 @@
   .form__title {
     font-size: 32px;
     line-height: 44px;
-    margin: 90px 0 50px 0;
   }
   .form__wrapper__input {
     column-gap: 40px;
@@ -2979,7 +2982,6 @@
   .form__title {
     font-size: 30px;
     line-height: 44px;
-    margin: 90px 0 50px 0;
   }
   .form__wrapper__input {
     column-gap: 40px;
@@ -3022,7 +3024,6 @@
   .form__title {
     font-size: 28px;
     line-height: 44px;
-    margin: 90px 0 50px 0;
   }
   .form__wrapper__input {
     column-gap: 30px;

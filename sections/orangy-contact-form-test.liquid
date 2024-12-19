@@ -68,7 +68,7 @@
             id=" fullname" {% comment %}ContactForm-name{% endcomment %}
             name="contact[{{ 'templates.contact.form.name' | t }}]"
             value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
-            placeholder="{{ 'templates.contact.form.name' | t }}"
+            placeholder="Name"
           >
             <span class="form-message"></span>
         </div>
@@ -114,7 +114,7 @@
             name="contact[{{ 'templates.contact.form.phone' | t }}]"
             pattern="[0-9\-]*"
             value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-            placeholder="{{ 'templates.contact.form.phone' | t }}"
+            placeholder="Phone"
           >
             <span class="form-message"></span>
         </div>
@@ -143,9 +143,9 @@
           {{- form.body -}}
         </textarea>
       </div>
-      <div class="contact__button">
+      <div class="contact__button orangy_form_button">
         <button type="submit" class="button">
-          {{ 'templates.contact.form.send' | t }}
+          submit
         </button>
       </div>
       <div class="text-end">
