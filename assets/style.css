@@ -2925,6 +2925,10 @@
   margin-bottom: 54px;
 }
 
+.orangy_form_button {
+  margin: 20px;
+}
+
 .invalid {
   color: #a42003;
 }
