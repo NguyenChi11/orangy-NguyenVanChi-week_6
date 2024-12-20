@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const submitFooter = document.querySelector("#submit-footer");
   const inputFooter = document.querySelector("#input-footer");
-  const formFooter = document.querySelector(".footer-block__newsletter");
+  const formFooter = document.querySelector(".footer__newsletter");
 
   const popupSuccess = document.querySelector(".popup-success");
   const popupError = document.querySelector(".popup-error");

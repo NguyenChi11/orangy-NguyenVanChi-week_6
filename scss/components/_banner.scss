@@ -124,7 +124,7 @@
   .banner {
     height: 600px;
     &__content {
-      margin-bottom: 28px;
+      margin: 3px 0 0px 0;
       h1 {
         font-size: 56px;
         line-height: 76.8px;
@@ -135,6 +135,9 @@
         line-height: 30px;
         margin: 20px;
         margin-left: 22px;
+      }
+      &__title {
+        margin: 0;
       }
     }
   }

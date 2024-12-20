@@ -6,10 +6,10 @@
   overflow: hidden;
   white-space: nowrap;
   background-color: $color-white;
-  padding: 26px 0;
+  padding: 24px 0;
   box-sizing: border-box;
-  margin: 80px 0;
-  margin-bottom: 70px;
+  margin: 40px 0;
+
   /* Thiết lập chữ và hiệu ứng */
   .marquee-text {
     display: inline-block;
@@ -347,11 +347,15 @@
   }
 }
 
-// @media (max-width: 391px) {
-//   .marquee-container {
-//     margin: 22px 0;
-//     .marquee-text {
-//       font-size: 62px;
-//     }
-//   }
-// }
+@media (max-width: 391px) {
+  .marquee-container {
+    margin-top: 20px;
+    margin-bottom: 0;
+    .marquee-text {
+      font-size: 60px;
+    }
+  }
+  .wrapper__block {
+    gap: 15px;
+  }
+}
