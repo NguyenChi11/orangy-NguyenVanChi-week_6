@@ -315,7 +315,7 @@
     height: 600px;
   }
   .banner__content {
-    margin-bottom: 28px;
+    margin: 3px 0 0px 0;
   }
   .banner__content h1 {
     font-size: 56px;
@@ -328,13 +328,16 @@
     margin: 20px;
     margin-left: 22px;
   }
+  .banner__content__title {
+    margin: 0;
+  }
 }
 .product__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin: 46px 13%;
+  margin: 100px 13% 32px;
 }
 .product__menu__left, .product__menu__right {
   margin-top: 0%;
@@ -656,13 +659,13 @@
 }
 @media (max-width: 391px) {
   .product__title__all {
-    margin-top: 28px;
+    margin-top: 50px;
   }
   .product__menu {
     margin: 0 2%;
   }
   .product__menu__left h1 {
-    letter-spacing: -1px;
+    letter-spacing: 0px;
   }
   .product__menu__right {
     width: 100%;
@@ -695,7 +698,7 @@
   .product__gird__list .product__gird .productions .category {
     font-size: 14px;
     line-height: 10px;
-    margin-top: 13px;
+    padding-bottom: 10px;
   }
   .product__gird__list .product__gird .productions .product__name {
     font-size: 16px;
@@ -858,10 +861,9 @@
   overflow: hidden;
   white-space: nowrap;
   background-color: #ffffff;
-  padding: 26px 0;
+  padding: 24px 0;
   box-sizing: border-box;
-  margin: 80px 0;
-  margin-bottom: 70px;
+  margin: 40px 0;
   /* Thiết lập chữ và hiệu ứng */
 }
 .marquee-container .marquee-text {
@@ -1148,6 +1150,18 @@
     width: 257px;
   }
 }
+@media (max-width: 391px) {
+  .marquee-container {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .marquee-container .marquee-text {
+    font-size: 60px;
+  }
+  .wrapper__block {
+    gap: 15px;
+  }
+}
 .inspiration {
   display: flex;
   justify-content: center;
@@ -1287,7 +1301,7 @@
 @media (max-width: 391px) {
   .inspiration__title h2 {
     font-size: 28px;
-    width: 320px;
+    width: 340px;
     line-height: 38px;
   }
   .inspiration__full .inspiration__body .inspiration__item img {
@@ -1299,6 +1313,10 @@
     line-height: 18px;
   }
 }
+.faq-all {
+  padding-bottom: 0px;
+}
+
 .faq {
   display: flex;
   justify-content: center;
@@ -1306,7 +1324,7 @@
   text-align: center;
   overflow: hidden;
   flex-direction: column;
-  margin-top: 100px;
+  margin: 60px 0 0 0;
 }
 .faq__title {
   margin-bottom: 36px;
@@ -1322,7 +1340,7 @@
   width: 1410px;
 }
 .faq__menu .faq__items {
-  margin-bottom: 20px;
+  margin-bottom: -3px;
 }
 .faq__menu .faq__items .faq__questions {
   cursor: pointer;
@@ -1743,6 +1761,8 @@
     text-align: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 0px;
   }
   .single__banner .single__text h2 {
     font-family: Lora;
@@ -2830,7 +2850,7 @@
 }
 
 .form {
-  margin-top: 100px;
+  margin: 70px 0 0 0;
   background: #f6f3ee;
   display: flex;
   justify-content: center;
@@ -2844,7 +2864,7 @@
   font-weight: 400;
   line-height: 48px;
   text-align: center;
-  margin: 100px 0 60px 0;
+  margin: 60px 0 60px 0;
   width: 450px;
 }
 .form__wrapper {
@@ -2908,7 +2928,7 @@
 }
 .form__wrapper__button {
   cursor: pointer;
-  margin-top: 36px;
+  margin-top: 20px;
 }
 .form__wrapper__button button {
   cursor: pointer;
@@ -2921,7 +2941,7 @@
 }
 .form__wrapper__button p {
   margin-top: 20px;
-  margin-bottom: 54px;
+  margin-bottom: 20px;
 }
 .form .text-end {
   margin-bottom: 60px;
@@ -3146,12 +3166,15 @@
   }
 }
 @media (max-width: 391px) {
+  .form {
+    margin: 16px 0 0 0;
+  }
   .form__title .title {
-    margin-top: 50px;
+    margin-top: 18px;
     font-size: 28px;
     width: 360px;
     line-height: 40px;
-    margin-bottom: 5 0px;
+    margin-bottom: 50px;
   }
   .form__wrapper__input {
     display: grid;
@@ -3171,6 +3194,12 @@
     height: 46px;
     font-size: 16px;
   }
+  .form__wrapper__input .input__name label,
+  .form__wrapper__input .input__email label,
+  .form__wrapper__input .input__address label,
+  .form__wrapper__input .input__phone label {
+    margin-bottom: 8px;
+  }
   .form__wrapper__message textarea {
     margin-bottom: 4px;
     height: 210px;
@@ -3181,7 +3210,7 @@
   }
   .form__wrapper__button p {
     margin-top: 16px;
-    margin-bottom: 64px;
+    margin-bottom: 28px;
   }
 }
 * {
