@@ -1,0 +1,186 @@
+{{ 'style.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'orangy-validator.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'orangy-contact-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'orangy-cookies.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'orangy-newsletter.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'orangy-submitForm.js' | asset_url }}" defer="defer"></script>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="form color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding" data-aos="zoom-out-down">
+    <div class="form__title">
+        <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+            {{ section.settings.heading }}
+          </h2>
+    </div>
+    <form action="" method="POST" id="form-1" class="form__wrapper">
+      <div class="form__wrapper__input">
+        <div class="input__name form-group">
+          <label for="fullname" class="form-label">Name *</label>
+          <input
+            class="input-form"
+            id="fullname"
+            type="text"
+            placeholder="Name"
+          />
+          <span class="form-message"></span>
+        </div>
+        <div class="input__email">
+          <label for="email" class="form-label">Email *</label>
+          <input
+            class="input-form"
+            id="email"
+            type="email"
+            placeholder="Email"
+          />
+          <span class="form-message"></span>
+        </div>
+        <div class="input__phone">
+          <label for="phone" class="form-label">Phone *</label>
+          <input
+            class="input-form"
+            id="phone"
+            type="number"
+            placeholder="Phone"
+          />
+          <span class="form-message"></span>
+        </div>
+        <div class="input__address">
+          <label for="address" class="form-label">Address</label>
+          <input
+            class="input-form"
+            id="address"
+            type="text"
+            placeholder="Address"
+          />
+          <span class="form-message"></span>
+        </div>
+      </div>
+      <div class="form__wrapper__message">
+        <label>Your message</label>
+        <textarea
+          class="input-form"
+          id="text-message"
+          placeholder="Example: I want to buy 6 chairs and a table brand Oda ottoman..."
+        ></textarea>
+      </div>
+      <div class="form__wrapper__button">
+        <button type="submit" class="input-btn">SUBMIT NOW</button>
+        <p class="input__required">* Required</p>
+      </div>
+    </form>
+    <div class="popup-recaptcha">
+      <div
+        class="g-recaptcha"
+        data-sitekey="6LeF6YwqAAAAAN5i-KDEKqDsGCOMNOxuL5xVnguK"
+      ></div>
+      <button class="btn-recaptcha">Accept</button>
+    </div>
+  </div>
+
+  {% schema %}
+{
+  "name": "t:sections.contact-form.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Contact us to order and receive purchase advice",
+      "label": "t:sections.contact-form.settings.title.label"
+    },
+    {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#F6F3EE"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__4.label"
+        },
+        {
+          "value": "hxxl",
+          "label": "t:sections.all.heading_size.options__5.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+    "type": "text",
+    "id": "text-end",
+    "label": "text end",
+    "default":"* Required"
+    }
+  ],
+  "presets": [
+    {
+      "name": "orangy contact form test shopify"
+    }
+  ]
+}
+{% endschema %}
+

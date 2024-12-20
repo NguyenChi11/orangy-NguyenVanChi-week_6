@@ -334,15 +334,15 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin: 0 13%;
+  margin: 46px 13%;
 }
 .product__menu__left, .product__menu__right {
-  margin-top: 6%;
-  margin-bottom: 3%;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 .product__menu__right {
-  margin-right: 6px;
-  margin-bottom: 4%;
+  margin-right: 0px;
+  margin-bottom: 0%;
 }
 .product__menu__left h1 {
   font-size: 36px;
@@ -356,10 +356,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 40px;
+  gap: 26px;
   font-family: Poppins;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px;
 }
 .product__menu__title {
@@ -450,7 +450,7 @@
   text-align: left;
 }
 .productions .product__image {
-  width: 100%;
+  width: 98%;
   height: 80%;
   object-fit: cover;
 }
@@ -734,8 +734,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 28px;
-  margin-bottom: 52px;
+  margin: 8px 0 50px;
 }
 .slider__title h1 {
   font-family: "Lora";
@@ -1310,7 +1309,7 @@
   margin-top: 100px;
 }
 .faq__title {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 .faq__title h1 {
   font-family: Lora;
@@ -1339,7 +1338,7 @@
   font-weight: 400;
   line-height: 38px;
   text-align: left;
-  margin: 20px 0;
+  margin: 20px 0 0px;
 }
 .faq__menu .faq__items .faq__questions .icon {
   margin-right: 10px;
@@ -1790,7 +1789,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 752px;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 .contact__shop__left {
   display: flex;
@@ -2845,7 +2844,7 @@
   font-weight: 400;
   line-height: 48px;
   text-align: center;
-  margin: 100px 0 50px 0;
+  margin: 100px 0 60px 0;
   width: 450px;
 }
 .form__wrapper {
@@ -2862,7 +2861,7 @@
 .form__wrapper__input .input__email,
 .form__wrapper__input .input__address,
 .form__wrapper__input .input__phone {
-  margin: 14px 0 0 0;
+  margin: 0px 0 0 0;
 }
 .form__wrapper__input .input__name input,
 .form__wrapper__input .input__email input,
@@ -2879,7 +2878,7 @@
 .form__wrapper__input .input__address label,
 .form__wrapper__input .input__phone label {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .form__wrapper__input .input__name span,
 .form__wrapper__input .input__email span,
@@ -2892,7 +2891,7 @@
 }
 .form__wrapper__message {
   text-align: start;
-  margin-top: 14px;
+  margin-top: 0px;
 }
 .form__wrapper__message label {
   display: flex;
@@ -2923,6 +2922,9 @@
 .form__wrapper__button p {
   margin-top: 20px;
   margin-bottom: 54px;
+}
+.form .text-end {
+  margin-bottom: 60px;
 }
 
 .orangy_form_button {

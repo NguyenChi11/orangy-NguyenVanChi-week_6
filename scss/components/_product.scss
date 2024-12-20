@@ -3,15 +3,15 @@
 
 .product__menu {
   @include space-between;
-  margin: 0 13%;
+  margin: 46px 13%;
   &__left,
   &__right {
-    margin-top: 6%;
-    margin-bottom: 3%;
+    margin-top: 0%;
+    margin-bottom: 0%;
   }
   &__right {
-    margin-right: 6px;
-    margin-bottom: 4%;
+    margin-right: 0px;
+    margin-bottom: 0%;
   }
   &__left h1 {
     font-size: 36px;
@@ -22,10 +22,10 @@
   }
   &__right {
     @include center-flex;
-    gap: 40px;
+    gap: 26px;
     font-family: Poppins;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 24px;
   }
   &__title {
@@ -130,7 +130,7 @@
     }
   }
   .product__image {
-    width: 100%;
+    width: 98%;
     height: 80%;
     object-fit: cover;
   }
