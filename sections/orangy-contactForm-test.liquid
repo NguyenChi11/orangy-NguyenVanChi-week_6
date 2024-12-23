@@ -1,7 +1,7 @@
 {{ 'style.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'orangy-validator.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'orangy-contact-form.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'orangy-cookies.js' | asset_url }}" defer="defer"></script>
+{% comment %} <script src="{{ 'orangy-cookies.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 <script src="{{ 'orangy-newsletter.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'orangy-submitForm.js' | asset_url }}" defer="defer"></script>
 

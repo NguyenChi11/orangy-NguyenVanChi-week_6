@@ -2722,7 +2722,7 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s, visibility 0.3s;
-  z-index: 500;
+  z-index: 1000;
   bottom: 0;
 }
 .popup-cookie-bar .cookie-bar-wrapper {
