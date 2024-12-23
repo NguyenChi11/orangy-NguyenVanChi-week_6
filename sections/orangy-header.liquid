@@ -18,12 +18,12 @@
           <i class="fa-solid fa-angle-right"></i>
         </div>
       </div>
-      <div class="header__logo header__logo--{{section.settings.logo_content_position}} 
+     {% comment %} <div class="header__logo header__logo--{{section.settings.logo_content_position}} 
       {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
       style="color:{{ section.settings.font_color}}; background:{{ section.settings.background_color }}"
     > 
        {{ section.settings.title-name }}
-      </div>
+      </div> {% endcomment %}
 </div>
 
 {% schema %}
@@ -61,13 +61,7 @@
               "id": "address_background_color",
               "label": "Background Color",
             },
-            {
-                "type": "text",
-                "label": "Title Name",
-                "id":"title-name",
-                "default":"ORANGY",
-                "placeholder": "ORANGY"               
-            },
+        
             {
               "type": "select",
               "id": "logo_content_position",
@@ -108,3 +102,11 @@
 
 
 {% endschema %}
+
+{% comment %} {
+  "type": "text",
+  "label": "Title Name",
+  "id":"title-name",
+  "default":"ORANGY",
+  "placeholder": "ORANGY"               
+}, {% endcomment %}
