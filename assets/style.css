@@ -3213,6 +3213,169 @@
     margin-bottom: 28px;
   }
 }
+.breadcrumb-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 13%;
+}
+.breadcrumb-wrapper .container-breadcrumb {
+  width: 100%;
+}
+.breadcrumb-wrapper .container-breadcrumb .collection-banner .collection-banner-image .breadcrumb-image {
+  width: 100%;
+  height: 100%;
+}
+.breadcrumb-wrapper .container-breadcrumb .breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  margin: 20px 0;
+  justify-content: start;
+}
+.breadcrumb-wrapper .container-breadcrumb .collection-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+}
+.breadcrumb-wrapper .container-breadcrumb .collection-content h1 {
+  font-family: Lora;
+  font-size: 56.25px;
+  font-weight: 400;
+  line-height: 80px;
+  text-align: left;
+  margin: 52px 0 15px 0;
+}
+.breadcrumb-wrapper .container-breadcrumb .collection-content p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .breadcrumb-wrapper .container-breadcrumb .collection-content h1 {
+    font-family: Lora;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 80px;
+    text-align: left;
+    margin: 52px 0 15px 0;
+  }
+  .breadcrumb-wrapper .container-breadcrumb .collection-content p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+  }
+}
+@media (max-width: 900px) {
+  .breadcrumb-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 2%;
+  }
+  .breadcrumb-wrapper .container-breadcrumb {
+    width: 100%;
+  }
+  .breadcrumb-wrapper .container-breadcrumb .collection-banner .collection-banner-image .breadcrumb-image {
+    width: 100%;
+    height: 241px;
+    object-fit: cover;
+  }
+  .breadcrumb-wrapper .container-breadcrumb .breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    margin: 20px 0;
+  }
+  .breadcrumb-wrapper .container-breadcrumb .collection-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+  }
+  .breadcrumb-wrapper .container-breadcrumb .collection-content h1 {
+    font-family: Lora;
+    font-size: 56.25px;
+    font-weight: 400;
+    line-height: 80px;
+    text-align: left;
+    margin: 30px 0 15px 0;
+  }
+  .breadcrumb-wrapper .container-breadcrumb .collection-content p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+  }
+}
+@media (max-width: 391px) {
+  .breadcrumb-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 2%;
+  }
+  .breadcrumb-wrapper .container-breadcrumb {
+    width: 100%;
+  }
+  .breadcrumb-wrapper .container-breadcrumb .collection-banner .collection-banner-image .breadcrumb-image {
+    width: 100%;
+    height: 241px;
+    object-fit: cover;
+  }
+  .breadcrumb-wrapper .container-breadcrumb .breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    margin: 20px 0;
+  }
+  .breadcrumb-wrapper .container-breadcrumb .collection-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+  }
+  .breadcrumb-wrapper .container-breadcrumb .collection-content h1 {
+    font-family: Lora;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: left;
+  }
+  .breadcrumb-wrapper .container-breadcrumb .collection-content p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+  }
+}
 * {
   padding: 0;
   margin: 0;
