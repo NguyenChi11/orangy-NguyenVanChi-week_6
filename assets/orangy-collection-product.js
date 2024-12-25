@@ -40,7 +40,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   productions.forEach((item) => {
     // Lấy chỉ số của từng sản phẩm từ data-index
-    const index = parseInt(item.getAttribute("data-index"), 10);
+    const index = parseInt(item.getAttribute("data-index"), 20);
+
+    // Áp dụng điều kiện và thêm class
+    if (index % 6 === 0) {
+      item.classList.add("production-item__gird__first");
+    } else if (index % 6 === 5) {
+      item.classList.add("production-item__gird__last");
+    }
+  });
+
+  const productionCollection = document.querySelectorAll(".production-item");
+  productionCollection.forEach((item) => {
+    const index = parseInt(item.getAttribute("data-index"), 22);
 
     // Áp dụng điều kiện và thêm class
     if (index % 6 === 0) {
