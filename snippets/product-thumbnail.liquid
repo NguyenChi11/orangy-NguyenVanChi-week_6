@@ -60,7 +60,7 @@
     <span
       class="product__media-icon motion-reduce quick-add-hidden{% if media.media_type == 'image' %} product__media-icon--{{ section.settings.image_zoom }}{% endif %}"
       aria-hidden="true"
-    >
+    > 
       {% case media.media_type %}
         {% when 'video', 'external_video' %}
           <span class="svg-wrapper">

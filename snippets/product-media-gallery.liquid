@@ -11,6 +11,8 @@
   {% render 'product-media-gallery' %}
 {% endcomment %}
 
+{{ 'style.css' | asset_url | stylesheet_tag }}
+
 {%- liquid
   if section.settings.hide_variants and variant_images.size == product.media.size
     assign single_media_visible = true
@@ -52,13 +54,17 @@
   data-desktop-layout="{{ section.settings.gallery_layout }}"
 >
   <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
-  <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
+  <div class="product-media-wrapper">
+  <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter product-media-item-left " 
+  style="margin:0">
     <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
       {{ 'accessibility.skip_to_product_info' | t }}
     </a>
     <ul
       id="Slider-Gallery-{{ section.id }}"
-      class="product__media-list contains-media grid grid--peek list-unstyled slider slider--mobile"
+      class="product__media-list contains-media grid grid--peek list-unstyled 
+      slider 
+      slider--mobile"
       role="list"
     >
       {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -128,7 +134,7 @@
     <div class="slider-buttons quick-add-hidden{% if hide_mobile_slider %} small-hide{% endif %}">
       <button
         type="button"
-        class="slider-button slider-button--prev"
+        class="slider-button slider-button--prev button-product-media"
         name="previous"
         aria-label="{{ 'general.slider.previous_slide' | t }}"
       >
@@ -144,7 +150,7 @@
       </div>
       <button
         type="button"
-        class="slider-button slider-button--next"
+        class="slider-button slider-button--next button-product-media"
         name="next"
         aria-label="{{ 'general.slider.next_slide' | t }}"
       >
@@ -154,6 +160,7 @@
       </button>
     </div>
   </slider-component>
+
   {%- if first_3d_model -%}
     <button
       class="button button--full-width product__xr-button"
@@ -183,11 +190,12 @@
   -%}
     <slider-component
       id="GalleryThumbnails-{{ section.id }}"
-      class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless section.settings.gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if section.settings.mobile_thumbnails != 'show' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
+      class="thumbnail-slider slider-mobile-gutter product-media-item-right quick-add-hidden{% unless section.settings.gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if section.settings.mobile_thumbnails != 'show' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
+      style="margin:0px"
     >
-      <button
+        <button
         type="button"
-        class="slider-button slider-button--prev{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
+        class="slider-button slider-button--prev button-product-media{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
         name="previous"
         aria-label="{{ 'general.slider.previous_slide' | t }}"
         aria-controls="GalleryThumbnails-{{ section.id }}"
@@ -199,7 +207,12 @@
       </button>
       <ul
         id="Slider-Thumbnails-{{ section.id }}"
-        class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
+        class="
+        thumbnail-list list-unstyled slider slider--mobile
+        {% if section.settings.gallery_layout == 'thumbnail_slider' %} 
+        slider--tablet-up
+        {% endif %} 
+        product-media-wrapper-right"
       >
         {%- capture sizes -%}
           (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width | minus: 100 | times: media_width | round }} - 4rem) / 4),
@@ -223,7 +236,7 @@
           -%}
           <li
             id="Slide-Thumbnails-{{ section.id }}-0"
-            class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}"
+            class="thumbnail-list__item slider__slide product-media-image {% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %} product-media-image"
             data-target="{{ section.id }}-{{ featured_media.id }}"
             data-media-position="{{ media_index }}"
           >
@@ -267,7 +280,10 @@
             -%}
             <li
               id="Slide-Thumbnails-{{ section.id }}-{{ forloop.index }}"
-              class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains media.src %} thumbnail-list_item--variant{% endif %}"
+              class="thumbnail-list__item 
+              slider__slide 
+              product-media-image
+              {% if section.settings.hide_variants and variant_images contains media.src %} thumbnail-list_item--variant{% endif %}"
               data-target="{{ section.id }}-{{ media.id }}"
               data-media-position="{{ media_index }}"
             >
@@ -317,7 +333,7 @@
       </ul>
       <button
         type="button"
-        class="slider-button slider-button--next{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
+        class="slider-button slider-button--next button-product-media{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
         name="next"
         aria-label="{{ 'general.slider.next_slide' | t }}"
         aria-controls="GalleryThumbnails-{{ section.id }}"
@@ -329,4 +345,5 @@
       </button>
     </slider-component>
   {%- endif -%}
+  </div>
 </media-gallery>

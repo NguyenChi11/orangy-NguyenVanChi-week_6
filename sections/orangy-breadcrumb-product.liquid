@@ -1,0 +1,32 @@
+{{ 'style.css' | asset_url | stylesheet_tag }}
+
+<div class="breadcrumb-wrapper">
+    <div class="container-breadcrumb">
+        <div class="breadcrumb">
+            <a href="{{ routes.root_url }}">Home</a> &gt; 
+            <a href="{{ product.collections.first.url }}">{{ product.collections.first.title }}</a> &gt; 
+            <span>{{ product.title }}</span>
+        </div>
+        <div class="collection-content">
+            <h1>{{ collection.title }}</h1>
+            {% if collection.description != blank %}
+            <p>{{ collection.description }}</p>
+            {% endif %}
+        </div>
+      </div>
+</div>
+  
+
+  
+
+{% schema %}
+{
+  "name": "Breadcrumb-product",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Breadcrumb product",
+    }
+  ]
+}
+{% endschema %}
