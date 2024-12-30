@@ -40,6 +40,32 @@
     }
   }
 }
+
+.main-product-description {
+  span {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+
+.plus-mins-product {
+  display: flex;
+  .add-product-card {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+
+.form-add-cart {
+  margin: 10px 0 0 0;
+  display: block;
+}
+
 @media (max-width: 1600px) {
   .product-media-wrapper {
     display: flex;

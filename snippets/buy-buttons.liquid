@@ -39,7 +39,7 @@
       {%- form 'product',
         product,
         id: product_form_id,
-        class: 'form',
+        class: 'form form-add-cart',
         novalidate: 'novalidate',
         data-type: 'add-to-cart-form'
       -%}
@@ -74,7 +74,7 @@
             id="ProductSubmitButton-{{ section_id }}"
             type="submit"
             name="add"
-            class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+            class="product-form__submit button button--full-width product-form__style {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
             {% if product.selected_or_first_available_variant.available == false
               or quantity_rule_soldout
               or product.selected_or_first_available_variant == null

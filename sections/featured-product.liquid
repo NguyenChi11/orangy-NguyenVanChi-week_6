@@ -4,6 +4,7 @@
     assign placeholder = true
   endif
 -%}
+{{ 'style.css' | asset_url | stylesheet_tag }}
 
 <product-info
   data-section="{{ section.id }}"
@@ -108,7 +109,7 @@
                     {{- block.settings.text -}}
                   </p>
                 {%- when 'title' -%}
-                  <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+                  <h2 class="product__title featured-product-name {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                     {%- unless placeholder -%}
                       {{ product.title | escape }}
                     {%- else -%}
@@ -376,6 +377,13 @@
                       </volume-pricing>
                     {%- endif -%}
                   </div>
+                {%- when 'buy_buttons' -%}
+                  {%- render 'buy-buttons',
+                    block: block,
+                    product: product,
+                    product_form_id: product_form_id,
+                    section_id: section.id
+                  -%}
                 {%- when 'share' -%}
                   {% liquid
                     assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin
@@ -387,13 +395,7 @@
                     block: block,
                     product_form_id: product_form_id
                   %}
-                {%- when 'buy_buttons' -%}
-                  {%- render 'buy-buttons',
-                    block: block,
-                    product: product,
-                    product_form_id: product_form_id,
-                    section_id: section.id
-                  -%}
+               
                 {%- when 'custom_liquid' -%}
                   {{ block.settings.custom_liquid }}
                 {%- when 'rating' -%}
@@ -436,7 +438,8 @@
                   {%- endif -%}
                 {%- when 'icon-with-text' -%}
                   {% render 'icon-with-text', block: block %}
-              {%- endcase -%}
+              
+                {%- endcase -%}
             {%- endfor -%}
             <a
               {% if product == blank %}
