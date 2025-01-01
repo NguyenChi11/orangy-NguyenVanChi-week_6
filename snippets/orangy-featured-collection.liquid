@@ -73,7 +73,8 @@
                     loading="lazy"
                   {% endunless %}
                   width="{{ card_product.featured_media.width }}"
-                  height="{{ card_product.featured_media.height }}"
+                  height="{{ card_product.featured_media.height }}" 
+                   style="width:100%; object-fit:cover;"
                 >
                 {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
                 {%- if card_product.media[1] != null and show_secondary_image -%}
