@@ -40,7 +40,7 @@
           "decor"
         ],
         "collection": "",
-        "products_to_show": 6,
+        "products_to_show": 4,
         "columns_desktop": 2,
         "full_width": false,
         "show_view_all": true,
@@ -199,6 +199,7 @@
     },
     "orangy_contact_form_test_WdycU7": {
       "type": "orangy-contact-form-test",
+      "disabled": true,
       "settings": {
         "heading": "Contact us to order and receive purchase advice",
         "background_color": "#f6f3ee",
@@ -206,6 +207,18 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
+        "text-end": "* Required"
+      }
+    },
+    "orangy_contact_form_test_jzbPpn": {
+      "type": "orangy-contactForm-test",
+      "settings": {
+        "heading": "Contact us to order and receive purchase advice",
+        "background_color": "#f6f3ee",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
         "text-end": "* Required"
       }
     },
@@ -271,18 +284,6 @@
         "contact_button": "@ORANGY",
         "image_contact_4": "shopify://shop_images/contact_4.png",
         "image_contact_5": "shopify://shop_images/contact_5.png"
-      }
-    },
-    "orangy_contact_form_test_jzbPpn": {
-      "type": "orangy-contactForm-test",
-      "settings": {
-        "heading": "Contact us to order and receive purchase advice",
-        "background_color": "#F6F3EE",
-        "heading_size": "h1",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "text-end": "* Required"
       }
     }
   },

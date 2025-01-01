@@ -13,6 +13,7 @@
   "sections": {
     "orangy_popup_zTbTjL": {
       "type": "orangy-popup",
+      "disabled": true,
       "settings": {
         "image-popup": "shopify://shop_images/42a0d941443057fe21c1967ae0043835b88a23dc52ca069d0fba69388a5353f8.png",
         "popup-content-h3": "Big Sale",
@@ -68,7 +69,6 @@
     },
     "header": {
       "type": "header",
-      "disabled": true,
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
