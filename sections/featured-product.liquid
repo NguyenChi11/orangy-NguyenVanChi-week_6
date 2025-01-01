@@ -4,6 +4,7 @@
     assign placeholder = true
   endif
 -%}
+{{ 'style.css' | asset_url | stylesheet_tag }}
 
 <product-info
   data-section="{{ section.id }}"
@@ -69,7 +70,9 @@
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
   <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
-    <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
+    <div class="
+      page-width 
+      section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
       <div class="featured-product product product--{{ section.settings.media_size }} grid grid--1-col gradient color-{{ section.settings.color_scheme }} product--{{ section.settings.media_position }}{% if section.settings.secondary_background == false %} isolate{% endif %} {% if product.media.size > 0 or section.settings.product == blank %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
         <div class="grid__item product__media-wrapper">
           {%- unless placeholder -%}
@@ -106,7 +109,7 @@
                     {{- block.settings.text -}}
                   </p>
                 {%- when 'title' -%}
-                  <h2 class="product__title {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+                  <h2 class="product__title featured-product-name {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                     {%- unless placeholder -%}
                       {{ product.title | escape }}
                     {%- else -%}
@@ -374,6 +377,13 @@
                       </volume-pricing>
                     {%- endif -%}
                   </div>
+                {%- when 'buy_buttons' -%}
+                  {%- render 'buy-buttons',
+                    block: block,
+                    product: product,
+                    product_form_id: product_form_id,
+                    section_id: section.id
+                  -%}
                 {%- when 'share' -%}
                   {% liquid
                     assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin
@@ -385,13 +395,7 @@
                     block: block,
                     product_form_id: product_form_id
                   %}
-                {%- when 'buy_buttons' -%}
-                  {%- render 'buy-buttons',
-                    block: block,
-                    product: product,
-                    product_form_id: product_form_id,
-                    section_id: section.id
-                  -%}
+               
                 {%- when 'custom_liquid' -%}
                   {{ block.settings.custom_liquid }}
                 {%- when 'rating' -%}
@@ -434,7 +438,8 @@
                   {%- endif -%}
                 {%- when 'icon-with-text' -%}
                   {% render 'icon-with-text', block: block %}
-              {%- endcase -%}
+              
+                {%- endcase -%}
             {%- endfor -%}
             <a
               {% if product == blank %}

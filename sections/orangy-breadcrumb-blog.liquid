@@ -1,0 +1,48 @@
+
+{{ 'style.css' | asset_url | stylesheet_tag }}
+
+<div class="breadcrumb-wrapper">
+    <div class="container-breadcrumb">
+        <div class="breadcrumb">
+            <a href="{{ routes.root_url }}">Home</a> &gt; 
+            <a href="{{ blog.url }}">Our Blog</a> 
+            <span>{{ collection.title }}</span>
+        </div>
+        <div class="collection-banner">
+            <div class="collection-banner-image">
+            {% if collection.image %}
+                {% comment %} <img src="{{ collection.image | img_url: '1024x1024' }}" alt="{{ collection.title }}"> {% endcomment %}
+                {% comment %} {{ collection.image | image_url: width : 1410 | image_tag:breadcrumb-image }} {% endcomment %}
+                <img 
+                    src="{{ collection.image | image_url: width : 1410 }}" 
+                    alt="{{ collection.title }}" 
+                    class="breadcrumb-image" 
+                    loading="lazy"
+                    width="1410"
+                    height="300">
+            {% endif %}
+            </div>
+        </div>
+        <div class="collection-content">
+            <h1>{{ collection.title }}</h1>
+            {% if collection.description != blank %}
+            <p>{{ collection.description }}</p>
+            {% endif %}
+        </div>
+      </div>
+</div>
+  
+
+  
+
+{% schema %}
+{
+  "name": "Breadcrumb",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Orangy Breadcrumb Blog",
+    }
+  ]
+}
+{% endschema %}

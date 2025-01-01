@@ -46,6 +46,7 @@
         {%- render 'icon-accordion', icon: block.settings.icon_1 -%}
       {%- else -%}
         <img
+          class="icon-product-image"
           src="{{ block.settings.image_1 | image_url }}"
           {% if block.settings.image_1.alt != blank %}
             alt="{{ block.settings.image_1.alt | escape }}"

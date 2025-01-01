@@ -1,0 +1,28 @@
+.banner-shopify {
+  height: 100%;
+}
+.banner__heading-style-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__heading-style {
+  font-family: Lora;
+  font-size: 56.38px;
+  font-weight: 400;
+  line-height: 80px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 450px;
+}
+.banner__text-style {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}

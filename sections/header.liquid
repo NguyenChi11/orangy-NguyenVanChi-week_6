@@ -17,6 +17,20 @@
     justify-self: start;
     margin-left: -1.2rem;
   }
+  .h2{
+    text-align: center;
+    font-size: 32px;
+    font-family: "Lora";
+    font-weight: 500;
+    padding: 1px;
+    cursor: pointer;
+  }
+  .header__menu-item{
+    font-family:"Poppins";
+    font-size:16px;
+    font-weight:400;
+    padding:0
+  }
 
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
     .scrolled-past-header .header__heading-logo-wrapper {
@@ -45,6 +59,7 @@
   .list-menu--inline {
     display: inline-flex;
     flex-wrap: wrap;
+    gap:20px;
   }
 
   summary.list-menu__item {
@@ -119,7 +134,9 @@
       assign localization_forms = true
     endif
   -%}
-  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} 
+    {% comment %} page-width {% endcomment %}
+    {% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
     {%- liquid
       if section.settings.menu != blank
         render 'header-drawer'
@@ -152,7 +169,10 @@
                 }}
               </div>
             {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
+              <span class="h2">
+                {% comment %} {{ shop.name }} {% endcomment %}
+                 {{ section.settings.title-name }}
+              </span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -192,7 +212,10 @@
                 }}
               </div>
             {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
+              <span class="h2">
+                {% comment %} {{ shop.name }} {% endcomment %}
+                {{ section.settings.title-name }}
+              </span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -469,6 +492,13 @@
       "label": "t:sections.header.settings.logo_position.label",
       "info": "t:sections.header.settings.logo_help.content"
     },
+    {
+      "type": "text",
+      "label": "Title Name",
+      "id":"title-name",
+      "default":"ORANGY",
+      "placeholder": "ORANGY"               
+  },
     {
       "type": "link_list",
       "id": "menu",

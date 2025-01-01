@@ -1,0 +1,44 @@
+.multirow-wrapper {
+  margin: 0 13%;
+}
+
+.multirow-text {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.multirow-text-heading {
+  font-family: Lora;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.multirow-text-title {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.multirow-image-style {
+  width: 100%;
+  aspect-ratio: 630/690;
+}
+
+@media (max-width: 990px) {
+  .multirow-wrapper {
+    margin: 0 2%;
+  }
+}
