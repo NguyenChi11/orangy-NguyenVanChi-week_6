@@ -16,8 +16,10 @@
   }
 {%- endstyle -%}
 
-{%- paginate blog.articles by 6 -%}
-  <div class="main-blog page-width section-{{ section.id }}-padding">
+{%- paginate blog.articles by 9 -%}
+  <div class="main-blog main-blog-wrapper
+    {% comment %} page-width  {% endcomment %}
+    section-{{ section.id }}-padding">
     {% comment %} <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ blog.title | escape }}
     </h1> {% endcomment %}
@@ -32,7 +34,7 @@
           {% endif %}
         >
           {%- render 'article-card',
-            article: article,
+            article: article, 
             media_height: section.settings.image_height,
             media_aspect_ratio: article.image.aspect_ratio,
             show_image: section.settings.show_image,

@@ -173,9 +173,9 @@
                   class=" production-item product-wrapper-collection 
                   {% comment %} grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% endcomment %}
                     "
+                    data-index="{{ forloop.index0 }}"
                   {% if settings.animations_reveal_on_scroll %}
                     data-cascade
-                    data-index="{{ forloop.index0 }}"
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                 >
