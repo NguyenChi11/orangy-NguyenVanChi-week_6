@@ -298,6 +298,46 @@
     },
     "orangy_single_banner_49WykX": {
       "type": "orangy-single-banner",
+      "blocks": {
+        "text_over_service_hk4cnj": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_1.png",
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "We offer free shipping with ground delivery to the lower 48 states."
+          }
+        },
+        "text_over_service_JjdUDq": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_2.png",
+            "title_over_service": "Online support",
+            "text_over_service": "Online Support24 hours a day,7 days a week"
+          }
+        },
+        "text_over_service_haWdwd": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_3.png",
+            "title_over_service": "0 Days return",
+            "text_over_service": "Exchange or return items free of charge within 30 days."
+          }
+        },
+        "text_over_service_6zU8AV": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_4.png",
+            "title_over_service": "Flexible payment",
+            "text_over_service": "Pay conveniently using multiple credit cards for added flexibility."
+          }
+        }
+      },
+      "block_order": [
+        "text_over_service_hk4cnj",
+        "text_over_service_JjdUDq",
+        "text_over_service_haWdwd",
+        "text_over_service_6zU8AV"
+      ],
       "settings": {
         "image_single_banner": "shopify://shop_images/image_2_24ce01b2-b22b-4873-84cb-fe061ff65e2b.png",
         "single_banner_opacity": 50,
