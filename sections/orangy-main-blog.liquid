@@ -16,6 +16,24 @@
   }
 {%- endstyle -%}
 
+{% assign unique_tags = "" %}
+{% for tag in blog.all_tags %}
+  {% assign unique_tags = unique_tags | append: tag | append: ',' %}
+{% endfor %}
+{% assign unique_tags_all = unique_tags | append: "All Post" | append: ',' %}
+{% assign unique_tags_array = unique_tags_all | split: ',' | uniq %}
+<div class="blog-post__tag" >
+  {% for tag in unique_tags_array reversed %}
+    {% assign tag_trimmed = tag | strip %}
+    {% if tag_trimmed != blank %}
+      <a
+        href="{% if tag == 'All Post' %} {{ blog.url }} {% else %} {{ blog.url }}/tagged/{{ tag }}{% endif %} "
+        class="blog_tag_name {% if tag_trimmed == 'All Post' and current_tags == blank %}active{% elsif current_tags contains tag_trimmed %}active{% endif %}"
+        data-tag="{{ tag }}">{{ tag }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
+
 {%- paginate blog.articles by 9 -%}
   <div class="main-blog main-blog-wrapper
     {% comment %} page-width  {% endcomment %}
