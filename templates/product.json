@@ -175,10 +175,19 @@
             "orangy_inspiration_title": "Showroom",
             "orangy_inspiration_content": "Experience design for living at ourflagship showroom located in Boston’s South End."
           }
+        },
+        "text_inspiration_Ni4yp3": {
+          "type": "text_inspiration",
+          "settings": {
+            "orangy_inspiration_image": "shopify://shop_images/items_2.png",
+            "orangy_inspiration_title": "Interior work",
+            "orangy_inspiration_content": "Crafting spaces through meticulousplanning, material selection, and creative execution, enhancing aesthetics and functionality."
+          }
         }
       },
       "block_order": [
-        "text_inspiration_kBRMWy"
+        "text_inspiration_kBRMWy",
+        "text_inspiration_Ni4yp3"
       ],
       "settings": {
         "title": "Change the look of your house, change the perspective of others",
