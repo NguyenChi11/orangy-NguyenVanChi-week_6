@@ -268,10 +268,11 @@
         "row_yiP6QB": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "image": "shopify://shop_images/f19de8a8356a2906e60becd7910fdf67.jpg",
+            "caption": "THE TIRED MAN",
+            "heading": "Unwind in plush comfort with thisunique table retreat.",
+            "text": "<p>Escape to relaxation with this unique table retreat, designed for plush comfort. Sink into soft, luxurious seating that cradles your body, offering a perfect blend of style and coziness. Ideal for unwinding, reading, or enjoying a drink, this retreat provides an elegant and serene ambiance. Indulge in a sanctuary where you can relax and rejuvenate, experiencing comfort like never before. Embrace the ultimate retreat foryour leisure moments, combining elegance with unmatched comfort.</p>",
+            "button_label": "",
             "button_link": ""
           }
         }
