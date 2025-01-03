@@ -93,6 +93,7 @@
         "text_over_service_JWwNCh": {
           "type": "text_over_service",
           "settings": {
+            "image_over_service": "shopify://shop_images/icon_4.png",
             "title_over_service": "Free & fast delivery",
             "text_over_service": "Free & fast delivery"
           }
