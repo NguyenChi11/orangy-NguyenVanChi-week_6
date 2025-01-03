@@ -177,11 +177,60 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "orangy_inspiration_7MUdFB": {
+      "type": "orangy-inspiration",
+      "blocks": {
+        "text_inspiration_eCiT68": {
+          "type": "text_inspiration",
+          "settings": {
+            "orangy_inspiration_image": "shopify://shop_images/items_1.png",
+            "orangy_inspiration_title": "Showroom",
+            "orangy_inspiration_content": "Experience design for living at ourflagship showroom located in Boston’s South End."
+          }
+        },
+        "text_inspiration_DLhHPG": {
+          "type": "text_inspiration",
+          "settings": {
+            "orangy_inspiration_image": "shopify://shop_images/items_2.png",
+            "orangy_inspiration_title": "Interior work",
+            "orangy_inspiration_content": "Crafting spaces through meticulousplanning, material selection, and creative execution, enhancing aesthetics and functionality."
+          }
+        },
+        "text_inspiration_TYqAHW": {
+          "type": "text_inspiration",
+          "settings": {
+            "orangy_inspiration_image": "shopify://shop_images/items_3.jpg",
+            "orangy_inspiration_title": "Authentic design",
+            "orangy_inspiration_content": "We only carry designs we believe inethically and aesthetically – original, authentic pieces that are made to last."
+          }
+        },
+        "text_inspiration_c7i6Ar": {
+          "type": "text_inspiration",
+          "settings": {
+            "orangy_inspiration_image": "shopify://shop_images/items_4.png",
+            "orangy_inspiration_title": "Custom additions",
+            "orangy_inspiration_content": "Tailoring unique elements to spaces, elevating interiors with personalized craftsmanship and design solutions."
+          }
+        }
+      },
+      "block_order": [
+        "text_inspiration_eCiT68",
+        "text_inspiration_DLhHPG",
+        "text_inspiration_TYqAHW",
+        "text_inspiration_c7i6Ar"
+      ],
+      "settings": {
+        "title": "Change the look of your house, change the perspective of others",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "multirow_V3LhBK"
+    "multirow_V3LhBK",
+    "orangy_inspiration_7MUdFB"
   ]
 }
