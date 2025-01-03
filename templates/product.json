@@ -260,6 +260,17 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "orangy_single_banner_Ke3zLH": {
+      "type": "orangy-single-banner",
+      "settings": {
+        "image_single_banner": "shopify://shop_images/876ddb7bd9fba1c9326e9d53af769ca6.jpg",
+        "single_banner_opacity": 50,
+        "title_single_banner": "Elevate Your Home",
+        "text_single_banner": "Clever products for every corner",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -267,6 +278,7 @@
     "related-products",
     "multirow_h98EXc",
     "orangy_inspiration_mYLa9a",
-    "image_banner_hxRHxW"
+    "image_banner_hxRHxW",
+    "orangy_single_banner_Ke3zLH"
   ]
 }
