@@ -15,7 +15,7 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  width: 450px;
+  width: 470px;
 }
 .banner__text-style {
   font-family: Poppins;
@@ -25,6 +25,8 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  width: 670px;
+  margin-top: 24px;
 }
 
 .blog-banner__content {
@@ -75,6 +77,16 @@
 }
 
 @media (max-width: 1200px) {
+  .banner__heading-style {
+    font-size: 40px;
+    width: auto;
+    line-height: 60px;
+  }
+  .banner__text-style {
+    font-size: 15px;
+    width: auto;
+    margin-top: 24px;
+  }
   .blog-banner__content {
     margin: 0 13%;
     height: 400px;
