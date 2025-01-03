@@ -65,6 +65,42 @@
     },
     "orangy_single_banner_MQH6E7": {
       "type": "orangy-single-banner",
+      "blocks": {
+        "text_over_service_cAjEM3": {
+          "type": "text_over_service",
+          "settings": {
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        },
+        "text_over_service_4iUmX6": {
+          "type": "text_over_service",
+          "settings": {
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        },
+        "text_over_service_prtdYY": {
+          "type": "text_over_service",
+          "settings": {
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        },
+        "text_over_service_JWwNCh": {
+          "type": "text_over_service",
+          "settings": {
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        }
+      },
+      "block_order": [
+        "text_over_service_cAjEM3",
+        "text_over_service_4iUmX6",
+        "text_over_service_prtdYY",
+        "text_over_service_JWwNCh"
+      ],
       "settings": {
         "image_single_banner": "shopify://shop_images/image_2_1.png",
         "single_banner_opacity": 50,
