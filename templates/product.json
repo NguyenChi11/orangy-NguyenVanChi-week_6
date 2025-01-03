@@ -225,12 +225,49 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "image_banner_LEDtLe": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_qcFkfJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Designed by Flemming Lassen",
+            "heading_size": "h1"
+          }
+        },
+        "text_aVrQwq": {
+          "type": "text",
+          "settings": {
+            "text": "A timeless icon, the mid-century armchair, The Tired Man, lets you sink into itsplush and comforting embrace after a long day.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qcFkfJ",
+        "text_aVrQwq"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/876ddb7bd9fba1c9326e9d53af769ca6.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "multirow_V3LhBK",
-    "orangy_inspiration_7MUdFB"
+    "orangy_inspiration_7MUdFB",
+    "image_banner_LEDtLe"
   ]
 }
