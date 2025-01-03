@@ -105,6 +105,7 @@
         "text_over_service_prtdYY",
         "text_over_service_JWwNCh"
       ],
+      "disabled": true,
       "settings": {
         "image_single_banner": "shopify://shop_images/image_2_1.png",
         "single_banner_opacity": 50,
@@ -116,7 +117,6 @@
     },
     "orangy_contact_shop_44iBjy": {
       "type": "orangy-contact-shop",
-      "disabled": true,
       "settings": {
         "image_contact_1": "shopify://shop_images/contact_1.png",
         "image_contact_2": "shopify://shop_images/contact_2.png",
