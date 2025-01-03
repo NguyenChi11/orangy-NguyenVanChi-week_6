@@ -183,11 +183,28 @@
             "orangy_inspiration_title": "Interior work",
             "orangy_inspiration_content": "Crafting spaces through meticulousplanning, material selection, and creative execution, enhancing aesthetics and functionality."
           }
+        },
+        "text_inspiration_rpjadd": {
+          "type": "text_inspiration",
+          "settings": {
+            "orangy_inspiration_image": "shopify://shop_images/items_3.jpg",
+            "orangy_inspiration_title": "Authentic design",
+            "orangy_inspiration_content": "We only carry designs we believe inethically and aesthetically – original, authentic pieces that are made to last."
+          }
+        },
+        "text_inspiration_wenjXz": {
+          "type": "text_inspiration",
+          "settings": {
+            "orangy_inspiration_title": "Default text",
+            "orangy_inspiration_content": "Default text"
+          }
         }
       },
       "block_order": [
         "text_inspiration_kBRMWy",
-        "text_inspiration_Ni4yp3"
+        "text_inspiration_Ni4yp3",
+        "text_inspiration_rpjadd",
+        "text_inspiration_wenjXz"
       ],
       "settings": {
         "title": "Change the look of your house, change the perspective of others",
