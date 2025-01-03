@@ -66,6 +66,7 @@
     "orangy_single_banner_MQH6E7": {
       "type": "orangy-single-banner",
       "settings": {
+        "image_single_banner": "shopify://shop_images/image_2_1.png",
         "single_banner_opacity": 50,
         "title_single_banner": "Elevate Your Home",
         "text_single_banner": "Clever products for every corner",
