@@ -116,6 +116,7 @@
     },
     "orangy_contact_shop_44iBjy": {
       "type": "orangy-contact-shop",
+      "disabled": true,
       "settings": {
         "image_contact_1": "shopify://shop_images/contact_1.png",
         "image_contact_2": "shopify://shop_images/contact_2.png",
