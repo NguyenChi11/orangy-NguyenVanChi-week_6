@@ -49,10 +49,16 @@
             "show_gift_card_recipient": false
           }
         },
-        "share": {
-          "type": "share",
+        "icon_with_text_mcynj6": {
+          "type": "icon-with-text",
           "settings": {
-            "share_label": "Share"
+            "layout": "horizontal",
+            "icon_1": "heart",
+            "heading_1": "Heading",
+            "icon_2": "return",
+            "heading_2": "Heading",
+            "icon_3": "truck",
+            "heading_3": "Heading"
           }
         },
         "collapsible_tab_jekwjA": {
@@ -81,6 +87,12 @@
             "content": "",
             "page": ""
           }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
         }
       },
       "block_order": [
@@ -91,10 +103,11 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "share",
+        "icon_with_text_mcynj6",
         "collapsible_tab_jekwjA",
         "collapsible_tab_FLDkBg",
-        "collapsible_tab_V9jCzt"
+        "collapsible_tab_V9jCzt",
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
