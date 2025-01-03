@@ -114,7 +114,6 @@
     },
     "related-products": {
       "type": "related-products",
-      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -130,155 +129,10 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "multirow_h98EXc": {
-      "type": "multirow",
-      "blocks": {
-        "row_Ref9cb": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/847eb7a75a3982c3e925ac7bfc098699_f0cba00b-1e9a-48a9-9e22-3664b8d3cce4.jpg",
-            "caption": "THE TIRED MAN",
-            "heading": "Lets you sink into its plush andcomforting embrace after a day.",
-            "text": "<p>Considered one of Denmark’s greatest and most influential architects, Mogens Lassen pioneered Danish Functionalism, taking his cues from Bauhaus sensibilities. His interior designs are a natural continuation of his architectural approach and add energy and atmosphere to everyday living spaces and tasks. From decorative objects to larger furniture designs, his designs delicately balance presence without drawing undue attention, finding their natural place in any space.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_Ref9cb"
-      ],
-      "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "heading_size": "h0",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-right",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "orangy_inspiration_mYLa9a": {
-      "type": "orangy-inspiration",
-      "blocks": {
-        "text_inspiration_kBRMWy": {
-          "type": "text_inspiration",
-          "settings": {
-            "orangy_inspiration_image": "shopify://shop_images/items_1.png",
-            "orangy_inspiration_title": "Showroom",
-            "orangy_inspiration_content": "Experience design for living at ourflagship showroom located in Boston’s South End."
-          }
-        },
-        "text_inspiration_Ni4yp3": {
-          "type": "text_inspiration",
-          "settings": {
-            "orangy_inspiration_image": "shopify://shop_images/items_2.png",
-            "orangy_inspiration_title": "Interior work",
-            "orangy_inspiration_content": "Crafting spaces through meticulousplanning, material selection, and creative execution, enhancing aesthetics and functionality."
-          }
-        },
-        "text_inspiration_rpjadd": {
-          "type": "text_inspiration",
-          "settings": {
-            "orangy_inspiration_image": "shopify://shop_images/items_3.jpg",
-            "orangy_inspiration_title": "Authentic design",
-            "orangy_inspiration_content": "We only carry designs we believe inethically and aesthetically – original, authentic pieces that are made to last."
-          }
-        },
-        "text_inspiration_wenjXz": {
-          "type": "text_inspiration",
-          "settings": {
-            "orangy_inspiration_image": "shopify://shop_images/items_4.png",
-            "orangy_inspiration_title": "Custom additions",
-            "orangy_inspiration_content": "Tailoring unique elements to spaces, elevating interiors with personalized craftsmanship and design solutions."
-          }
-        }
-      },
-      "block_order": [
-        "text_inspiration_kBRMWy",
-        "text_inspiration_Ni4yp3",
-        "text_inspiration_rpjadd",
-        "text_inspiration_wenjXz"
-      ],
-      "settings": {
-        "title": "Change the look of your house, change the perspective of others",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "image_banner_hxRHxW": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_TNE3GC": {
-          "type": "heading",
-          "settings": {
-            "heading": "Designed byFlemming Lassen",
-            "heading_size": "h2"
-          }
-        },
-        "text_J9F9Wf": {
-          "type": "text",
-          "settings": {
-            "text": "A timeless icon, the mid-century armchair, The Tired Man, lets you sink into itsplush and comforting embrace after a long day.",
-            "text_style": "body"
-          }
-        },
-        "buttons_gDc8Qj": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_TNE3GC",
-        "text_J9F9Wf",
-        "buttons_gDc8Qj"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/876ddb7bd9fba1c9326e9d53af769ca6.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "orangy_single_banner_Ke3zLH": {
-      "type": "orangy-single-banner",
-      "settings": {
-        "image_single_banner": "shopify://shop_images/876ddb7bd9fba1c9326e9d53af769ca6.jpg",
-        "single_banner_opacity": 50,
-        "title_single_banner": "Elevate Your Home",
-        "text_single_banner": "Clever products for every corner",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
-    "related-products",
-    "multirow_h98EXc",
-    "orangy_inspiration_mYLa9a",
-    "image_banner_hxRHxW",
-    "orangy_single_banner_Ke3zLH"
+    "related-products"
   ]
 }

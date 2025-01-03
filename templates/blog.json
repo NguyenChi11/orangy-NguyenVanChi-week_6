@@ -22,15 +22,33 @@
         "padding_bottom": 36
       }
     },
-    "orangy_banner_blogs_tAGTRX": {
+    "orangy_breadcrumb_blog_gaLQbQ": {
+      "type": "orangy-breadcrumb-blog",
+      "settings": {}
+    },
+    "orangy_banner_blogs_GR6N8R": {
       "type": "orangy-banner-blogs",
       "settings": {
-        "article_banner": ""
+        "article_banner": "news/essential-furniture-pieces-for-every-home-office"
+      }
+    },
+    "orangy_main_blog_3GAgwb": {
+      "type": "orangy-main-blog",
+      "settings": {
+        "layout": "collage",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "orangy_banner_blogs_tAGTRX"
+    "orangy_breadcrumb_blog_gaLQbQ",
+    "orangy_banner_blogs_GR6N8R",
+    "orangy_main_blog_3GAgwb"
   ]
 }
