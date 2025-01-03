@@ -123,7 +123,7 @@
               <span>{{ article.author }}</span>
             {%- endif -%}
           </div>
-          <h3 class="card__heading card__heading__title--blogs{% if show_excerpt %} h2{% endif %}">
+          <h3 class="card__heading {% if show_excerpt %} h2{% endif %} card__heading__title--blogs" style="text-align: start;">
             <a href="{{ article.url }}" class="full-unstyled-link">
               {{ article.title | truncate: 50 | escape }}
             </a>
