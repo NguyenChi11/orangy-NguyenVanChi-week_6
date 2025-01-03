@@ -173,9 +173,9 @@
                   class=" production-item product-wrapper-collection 
                   {% comment %} grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% endcomment %}
                     "
-                    data-index="{{ forloop.index0 }}"
                   {% if settings.animations_reveal_on_scroll %}
                     data-cascade
+                    data-index="{{ forloop.index0 }}"
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                 >
@@ -220,7 +220,7 @@
       "min": 8,
       "max": 36,
       "step": 4,
-      "default": 15,
+      "default": 16,
       "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
     },
     {
@@ -427,12 +427,10 @@
       "default": 36
     }
   ],
-}
-{% endschema %}
-{% comment %} 
   "presets": [
     {
       "name": "orangy product gird"
     }
-  ]  {% endcomment %}
-
+  ]
+}
+{% endschema %}
