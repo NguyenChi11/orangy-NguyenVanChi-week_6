@@ -39,8 +39,8 @@
         "padding_bottom": 36
       }
     },
-    "orangy_breadcrumb_product_aVtLUD": {
-      "type": "orangy-breadcrumb-product",
+    "orangy_breadcrumb_ExxGkp": {
+      "type": "orangy-breadcrumb",
       "settings": {}
     },
     "main_collection_product_grid_QwnQij": {
@@ -67,7 +67,7 @@
   "order": [
     "banner",
     "main_collection_product_grid_WGaL3A",
-    "orangy_breadcrumb_product_aVtLUD",
+    "orangy_breadcrumb_ExxGkp",
     "main_collection_product_grid_QwnQij"
   ]
 }
