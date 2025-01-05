@@ -1,0 +1,176 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+.banner-product {
+  height: 743px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include center-flex;
+  margin-bottom: 20px;
+  position: relative;
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 1;
+  }
+  &__content {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lora";
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: Lora;
+      font-size: 56.38px;
+      font-weight: 400;
+      line-height: 80px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      width: 530px;
+      margin-bottom: 24px;
+    }
+    h4 {
+      color: $color-white;
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      width: 578px;
+    }
+    &__title {
+      cursor: pointer;
+      margin-top: 30px;
+      p {
+        display: inline;
+        border-bottom: 2px solid $color-white;
+        font-size: 16px;
+        color: $color-white;
+        font-family: Poppins;
+      }
+    }
+  }
+}
+.banner--top-left {
+  @include flex-top-left;
+}
+
+.banner--top-center {
+  @include flex-top-center;
+}
+
+.banner--top-right {
+  @include flex-top-right;
+}
+
+.banner--middle-left {
+  @include flex-middle-left;
+}
+
+.banner--middle-center {
+  @include flex-middle-center;
+}
+
+.banner--middle-right {
+  @include flex-middle-right;
+}
+
+.banner--bottom-left {
+  @include flex-bottom-left;
+}
+
+.banner--bottom-center {
+  @include flex-bottom-center;
+}
+
+.banner--bottom-right {
+  @include flex-bottom-right;
+}
+
+@media (max-width: 1919px) {
+  .banner-product {
+    height: 743px;
+    &__content h1 {
+      font-size: 62px;
+      line-height: 84px;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .banner-product {
+    height: 624px;
+    &__content h1 {
+      font-family: Lora;
+      font-size: 42px;
+      font-weight: 400;
+      line-height: 64px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      width: auto;
+    }
+    h4 {
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-product {
+    height: 624px;
+    &__content h1 {
+      font-size: 56px;
+      line-height: 80px;
+    }
+  }
+}
+
+@media (max-width: 391px) {
+  .banner-product {
+    &__content {
+      margin: 3px 0 0px 0;
+      h1 {
+        font-family: Lora;
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 64px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        width: 300px;
+      }
+      h4 {
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        width: auto;
+      }
+      &__title {
+        margin: 0;
+      }
+    }
+  }
+}

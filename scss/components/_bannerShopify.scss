@@ -29,6 +29,17 @@
   margin-top: 24px;
 }
 
+.blog-banner-title {
+  font-family: Lora;
+  font-size: 56.25px;
+  font-weight: 400;
+  line-height: 80px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 60px;
+}
+
 .blog-banner__content {
   display: flex;
   justify-content: center;
@@ -110,5 +121,14 @@
       width: auto;
       font-size: 28px;
     }
+  }
+
+  .blog-banner-title {
+    font-family: Lora;
+    font-size: 44.9px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: center;
+    margin-bottom: 32px;
   }
 }

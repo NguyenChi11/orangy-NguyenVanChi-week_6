@@ -1,5 +1,8 @@
 {{ 'style.css' | asset_url | stylesheet_tag}}
 
+
+<div class="blog-banner-title"> Our Blog</div>
+
 <div class="blog-banner__content" style="background-image: url({{ section.settings.article_banner.image.src | image_url: width: 3840 }}">
     <div class="blog-banner__content__date">{{ section.settings.article_banner.created_at | date: "%b %d, %Y" }}</div>
     <div class="blog-banner__content__title">{{ section.settings.article_banner.title }}</div>

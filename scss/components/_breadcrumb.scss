@@ -18,6 +18,7 @@
       margin: 20px 0;
       justify-content: start;
     }
+
     .collection-content {
       @include center-flex;
       justify-content: start;
@@ -40,6 +41,12 @@
       }
     }
   }
+}
+
+.breadcrumb-blog {
+  @include center-flex;
+  gap: 6px;
+  margin: 20px 0;
 }
 
 @media (max-width: 1200px) {

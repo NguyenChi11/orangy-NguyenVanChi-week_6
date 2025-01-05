@@ -1,0 +1,156 @@
+
+{{ 'style.css' | asset_url | stylesheet_tag }}
+
+<div class="banner-product banner--{{section.settings.banner_content_position}}" style="background-image: url({{ section.settings.orangy_banner_image | image_url: width: 3840 }})" data-aos="fade-down-right">
+    <div class="banner-product__overlay" style="opacity: {{ section.settings.banner_opacity | divided_by: 100.0 }};">
+    </div>
+    <div class="banner-product__content" data-aos="fade-up">
+      <h1 style="color: {{ section.settings.banner_title_color }}; font-family: {{ section.settings.heading_font_title }}; font-size:{{ section.settings.banner_font_size }}">
+        {{ section.settings.orangy_banner_title }}
+        </h1>
+      <h4>{{ section.settings.orangy_banner_description }}</h4>
+      <div class="banner-product__content__title">
+        <p>{{ section.settings.orangy_banner_confirm}}</p>
+      </div>
+    </div>
+  </div>
+
+  {% schema %}
+{
+    "name": "orangy banner ",
+    "tag": "section",
+    "class": "shopify-orangy-banner",
+    "disabled_on": {
+        "groups": ["header","footer"]
+    },
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "orangy_banner_image",
+            "label": "orangy-banner-image"
+        },
+        {
+            "type": "select",
+            "id": "banner_content_position",
+            "options": [
+              {
+                "value": "top-left",
+                "label": "top left"
+              },
+              {
+                "value": "top-center",
+                "label": "top center"
+              },
+              {
+                "value": "top-right",
+                "label": "top right"
+              },
+              {
+                "value": "middle-left",
+                "label": "middle left"
+              },
+              {
+                "value": "middle-center",
+                "label": "middle center"
+              },
+              {
+                "value": "middle-right",
+                "label": "middle right"
+              },
+              {
+                "value": "bottom-left",
+                "label": "bottom left"
+              },
+              {
+                "value": "bottom-center",
+                "label": "bottom center"
+              },
+              {
+                "value": "bottom-right",
+                "label": "bottom right"
+              },
+            ],
+            "default": "middle-center",
+            "label": "middle center"
+        },
+        {
+          "type": "range",
+          "id": "banner_opacity",
+          "min": 0,
+          "max": 100,
+          "step": 10,
+          "unit": "%",
+          "label": "opacity label",
+          "default": 50
+        },
+
+        {
+          "type": "range",
+          "id": "banner_font_size",
+          "min": 12,
+          "max": 70,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size",
+          "default": 16
+        },
+       
+        {
+            "type": "text",
+            "id": "orangy_banner_title",
+            "label": "orangy-banner-title",
+            "default":"EMBRACE VISION"
+        }, 
+        {
+            "type": "font_picker",
+            "id": "heading_font_title",
+            "label": "Heading font",
+            "default": "helvetica_n4"
+        },
+        {
+          "type": "color",
+          "id": "banner_title_color",
+          "label": "Banner Title Color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "select",
+          "id": "banner_title_size",
+          "label": "Banner Title Size",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            }
+          ],
+          "default": "medium"
+        },
+        {
+            "type": "richtext",
+            "id": "orangy_banner_description",
+            "label": "orangy-banner-description",
+        }, 
+        {
+            "type": "richtext",
+            "id": "orangy_banner_confirm",
+            "label": "orangy-banner-confirm",
+        },
+   
+
+    ],
+    "presets": [
+        {
+          "name": "Orangy banner product",
+        }       
+      ]
+}
+{% endschema %}
+{% comment %} phần chọn font chữa hoàn chỉnh {% endcomment %}
