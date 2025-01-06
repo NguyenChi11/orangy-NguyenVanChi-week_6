@@ -62,14 +62,14 @@ product-info {
 
 @media screen and (min-width: 990px) {
   .product--large:not(.product--no-media) .product__media-wrapper {
-    max-width: 65%;
-    width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 56%;
+    width: calc(56% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
   .product--large:not(.product--no-media) .product__info-wrapper {
-    padding: 0 0 0 4rem;
-    max-width: 35%;
-    width: calc(35% - var(--grid-desktop-horizontal-spacing) / 2);
+    padding: 0 0 0 8rem;
+    max-width: 44%;
+    width: calc(44% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
   .product--large:not(.product--no-media).product--right
@@ -267,7 +267,7 @@ a.product__text {
 }
 
 .product__title > * {
-  margin: 0;
+  margin: 12px 0 0 0;
   /* font family name */
   font-family: Lora;
   font-size: 36px;

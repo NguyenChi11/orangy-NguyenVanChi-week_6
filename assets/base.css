@@ -3181,11 +3181,11 @@ details-disclosure > details {
 }
 
 .rte > *:first-child {
-  margin-top: 0;
+  margin-top: 8px;
 }
 
 .rte > *:last-child {
-  margin-bottom: 0;
+  margin-bottom: -9px;
 }
 
 .rte table {
