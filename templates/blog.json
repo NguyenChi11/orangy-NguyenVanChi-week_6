@@ -43,12 +43,64 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "orangy_single_banner_PnWpU4": {
+      "type": "orangy-single-banner",
+      "blocks": {
+        "text_over_service_DrigNg": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_1.png",
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        },
+        "text_over_service_dYntDq": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_2.png",
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        },
+        "text_over_service_8DgJ34": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_3.png",
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        },
+        "text_over_service_gdJaUa": {
+          "type": "text_over_service",
+          "settings": {
+            "image_over_service": "shopify://shop_images/icon_4.png",
+            "title_over_service": "Free & fast delivery",
+            "text_over_service": "Free & fast delivery"
+          }
+        }
+      },
+      "block_order": [
+        "text_over_service_DrigNg",
+        "text_over_service_dYntDq",
+        "text_over_service_8DgJ34",
+        "text_over_service_gdJaUa"
+      ],
+      "settings": {
+        "image_single_banner": "shopify://shop_images/image_2_24ce01b2-b22b-4873-84cb-fe061ff65e2b.png",
+        "single_banner_opacity": 50,
+        "title_single_banner": "Elevate Your Home",
+        "text_single_banner": "Clever products for every corner",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "orangy_breadcrumb_blog_gaLQbQ",
     "orangy_banner_blogs_GR6N8R",
-    "orangy_main_blog_3GAgwb"
+    "orangy_main_blog_3GAgwb",
+    "orangy_single_banner_PnWpU4"
   ]
 }
