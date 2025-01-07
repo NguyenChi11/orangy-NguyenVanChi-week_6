@@ -3256,7 +3256,7 @@
 }
 .breadcrumb-wrapper .container-breadcrumb .collection-banner .collection-banner-image .breadcrumb-image {
   width: 100%;
-  height: 100%;
+  object-fit: cover;
 }
 .breadcrumb-wrapper .container-breadcrumb .breadcrumb {
   display: flex;
